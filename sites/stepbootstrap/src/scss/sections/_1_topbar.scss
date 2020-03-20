@@ -1,0 +1,27 @@
+.topbar {
+  background-color: #434343;
+
+  &__content {
+    padding: 0.7rem 0;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  &__btn {
+    &:hover {
+      text-decoration: none;
+      background: #292929;
+      transition: .5s ease;
+    }
+  }
+}
+
+
+.icon-person {
+  fill: #353dff;
+  width: 16px;
+  height: 16px;
+}

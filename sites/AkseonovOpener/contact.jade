@@ -1,0 +1,99 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title WeLoveWhatWeDo
+        link(rel="icon", type="image/png", href="src/images/favicon.png")
+        link(href='dist/lib/bootstrap.min.css', rel='stylesheet')
+        link(href='src/css/style.css', rel='stylesheet')
+        link(rel="stylesheet" href="dist/lib/mui.css")
+        script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+        script(src='dist/lib/validator.js')
+        script(src='dist/lib/mui.js')
+        script(src='src/js/js.js')
+        script(src='dist/lib/bootstrap.js')
+
+body
+    .loader_box
+        .loader
+            .double-bounce1
+            .double-bounce2
+    .contact.section
+        .gradient
+            .container
+                a.logo(href='index.html')
+                    svg(width='65', height='65')
+                        rect.logo_rect(x='5', y='5', width='55', height='55', fill='transparent', stroke='#000', stroke-width='2')
+                        line.logo_line(x1='60', y1='5', x2='5', y2='60', stroke='#000', stroke-width='2')
+                nav.menu
+                    ul.menu__list.list
+                        li.list__item
+                            a.list__link(href='work.html') work
+                        li.list__item
+                            a.list__link(href='about_us.html') about
+                        li.list__item.active
+                            a.list__link(href='contact.html') contact
+                nav.mobile
+                    button.menu_button Toggle
+                        .icon
+                    .mobile_menu
+                        ul.mobile__list
+                            li.list__item
+                                a.list__link(href='index.html') home
+                            li.list__item
+                                a.list__link(href='work.html') work
+                            li.list__item
+                                a.list__link(href='about_us.html') about
+
+
+                .component
+                    h1.letsstart.text.animation Let`s start something great together
+                    svg.greenline(width='230px', height='230px', xml:space='preserve')
+                        line(class='animline' fill='none', stroke='#52fc55', stroke-width='2', stroke-linecap='round', stroke-linejoin='round', x1="228" y1="10" x2="10" y2="228" )
+                .contactinfo.text.mov.animation
+                    p.number +43 660 399 22 62
+                    p.mail office[at]noname.com
+
+
+
+                .mailtous
+                    span(class="outline outline_top--black animation")
+                    span(class="outline outline_right--black animation")
+                    span(class="outline outline_bottom--black animation")
+                    span(class="outline outline_left--black animation")
+                    .border
+                        span(class="outline--black outline_top animation")
+                        span(class="outline--black outline_right animation")
+                        span(class="outline--black outline_bottom animation")
+                        span(class="outline--black outline_left animation")
+
+                    form.mailtous__form(data-toggle='validator', role='form')
+                        .form-group
+                            input#inputName.form-control(type='text', data-error='Bruh, please enter your name', placeholder='', required onclick='this.value = "";')
+                            label.control-label(for='inputName') name
+                            span(class="outline_form animation")
+                            .help-block.with-errors
+                        .form-group
+                            input#inputEmail.form-control(type='email', placeholder='', data-error='Bruh, that email address is invalid', required='')
+                            label.control-label(for='inputEmail') email
+                            span(class="outline_form animation")
+                            .help-block.with-errors
+                        .form-group.form-message
+                            textarea#inputMessage.form-control(type='message', rows="5", data-minlength='6', placeholder='', required='')
+                            label.control-label.control-label__message(for='inputMessage') message
+                            span(class="outline_form animation")
+                            .help-block.with-errors
+
+                        .form-group.form-botton
+                            button.btn.btn-default(type='submit') Send message
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+<section class="topmenu bg-white">
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light m-auto col-md-12 col-lg-8 px-0 px-lg-5 justify-content-between p-0 topmenu__navbar">
+
+            <!--Search form-->
+
+            <form class="col-5 clo-md-4 col-lg-3 form-inline m-3 ml-5 px-0 my-4 my-lg-0 mx-lg-0 justify-content-end topmenu__search">
+                <input class="form-control mr-sm-2 py-4 position-relative border border-dark rounded-0 flex-grow-1" type="search" placeholder="Search products..." aria-label="Search">
+                <button class="btn btn-link position-absolute border-0 flex-shrink-1 text-right" type="submit">
+                    <img class="topmenu__search-img" src="img/magnifying-glass.svg" alt="">
+                </button>
+            </form>
+
+            <!--/Search form-->
+
+
+            <!--Navbar-->
+
+            <button class="navbar-toggler border-0 navbar-nav__wrapper" onclick="menus()" id="navbar-nav__wrapper" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-nav__btn" onclick="menu()" id="navbar-nav__btn"></div>
+            </button>
+
+
+            <div class="collapse navbar-collapse flex-grow-0 col-6 align-self-center topmenu__wrapper" id="navbarSupportedContent">
+
+                <ul class="navbar-nav flex-grow-1 bg-lg-white topmenu__list">
+                    <li class="nav-item active px-2 d-flex justify-content-end topmenu__item">
+                        <a class="text-uppercase align-self-center px-2 topmenu__link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-end topmenu__item">
+                        <a class="text-uppercase text-derk align-self-center px-2 topmenu__link" href="#topslider">Slider</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-end topmenu__item">
+                        <a class="text-uppercase align-self-center px-2 topmenu__link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-end topmenu__item">
+                        <a class="text-uppercase align-self-center px-2 topmenu__link" href="#">Stocks</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-end topmenu__item">
+                        <a class="text-uppercase align-self-center px-2 topmenu__link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-end topmenu__item">
+                        <a class="text-uppercase align-self-center px-2 topmenu__link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-end topmenu__item">
+                        <a class="text-uppercase align-self-center px-2 topmenu__link" href="#">Blog</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</section>

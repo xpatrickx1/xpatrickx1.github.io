@@ -1,0 +1,25 @@
+.link-underline {
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 20%;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      transition: .5s ease;
+      transform: scaleX(0);
+    }
+
+    &:hover:before {
+      transform: scaleX(1);
+    }
+
+    &:link, &:visited, &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+}

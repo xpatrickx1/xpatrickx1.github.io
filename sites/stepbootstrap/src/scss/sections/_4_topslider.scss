@@ -1,0 +1,113 @@
+.topslider {
+
+  z-index: 10;
+
+  &__carousel {
+    height: 21rem;
+    overflow: hidden;
+  }
+
+  &__info {
+    height: 14rem;
+    background: rgba(38, 38, 38, 0.77);
+    z-index: 100;
+  }
+
+  &__img {
+    width: 130%;
+    height: 130%;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+  }
+
+  &__shop-btn {
+    width: 9.5rem;
+  }
+
+  &__control {
+    top: auto;
+    width: 50%;
+    height: 2rem;
+    opacity: 1;
+
+    &--dark {
+      background-color: #2A2A2A;
+    }
+
+    &--orange {
+      background: $orange;
+    }
+  }
+
+  &__control-icon {
+    width: 15px;
+  }
+}
+
+.container {
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  .topslider {
+
+    &__carousel {
+      height: 34rem;
+    }
+
+    &__info {
+      height: 15rem;
+      top: 7rem;
+    }
+
+    &__img {
+    }
+
+    &__title {
+      font-size: 3.6rem;
+    }
+
+    &__subtitle {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .topslider {
+
+    &__carousel {
+      height: 35rem;
+    }
+
+    &__info {
+      height: 15rem;
+      top: 7rem;
+    }
+
+    &__img {
+    }
+
+    &__title {
+      font-size: 3.6rem;
+    }
+
+    &__subtitle {
+      font-size: 1.6rem;
+    }
+
+    &__control {
+      height: 3rem;
+    }
+  }
+}
+
+

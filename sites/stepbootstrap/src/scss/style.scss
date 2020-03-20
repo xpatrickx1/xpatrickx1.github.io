@@ -1,0 +1,22 @@
+@import "sections/1_topbar";
+@import "sections/2_header";
+@import "sections/3_topmenu";
+@import "sections/4_topslider";
+@import "sections/5_features";
+@import "sections/6_gallery";
+@import "sections/footer";
+@import "components/modal";
+@import "components/link";
+@import "components/variables";
+@import "components/mixin";
+@import "components/reset";
+
+
+body, html {
+  font-family: Arial;
+  font-size: 0.9em;
+  line-height: 1;
+}
+html {
+   scroll-behavior: smooth;
+ }

@@ -1,0 +1,87 @@
+$orange: #D58E32;
+.header {
+  background: #363636;
+  height: 10rem;
+
+  &__phone {
+    font-size: 1.15rem;
+  }
+
+  &__phone-img {
+    display: none;
+  }
+
+  &__logo {
+    width: 8rem;
+  }
+}
+
+.cart {
+
+  &__bg {
+    width: 3.2rem;
+    height: 3rem;
+    background: $orange;
+  }
+
+  &__img {
+    width: 21px;
+    height: 17px;
+    fill: white;
+  }
+
+  &__counter {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    background: #363636;
+    border-radius: 50%;
+    z-index: 1000;
+  }
+
+  &__footer-btn {
+    width: 35%;
+    height: 2.7rem;
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+
+  &__orange-btn {
+    //@include background-orange;
+    background: $orange;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .header {
+
+    &__phone {
+      font-size: 1.15rem;
+    }
+
+    &__phone-img {
+      display: inline-block;
+      height: 30px;
+    }
+
+    &__logo {
+      width: 11rem;
+    }
+  }
+
+  .cart {
+
+    &__bg {
+      width: 3.6rem;
+      height: 3.3rem;
+    }
+
+    &__img {
+      width: 23px;
+      height: 21px;
+    }
+  }
+
+}
+

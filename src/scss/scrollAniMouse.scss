@@ -1,0 +1,60 @@
+.scroll-downs {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+  margin: auto;
+  width :34px;
+  height: 55px;
+  z-index: 5;
+  &.animIn  {
+    animation: fadeUpMouse .5s ease forwards;
+  }
+
+  &.animOut  {
+    animation: fadeOutMouse .5s ease forwards;
+  }
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.7;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 1; }
+  10% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(15px); opacity: 1;}
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+
+@keyframes fadeUpMouse {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+@keyframes fadeOutMouse {
+  from{opacity: 1}
+  to{opacity: 0}
+}
+
+@media (max-width: 992px) {
+  .scroll-downs {
+    display: none;
+  }
+}

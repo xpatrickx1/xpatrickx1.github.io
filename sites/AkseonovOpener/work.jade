@@ -1,0 +1,198 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title WeLoveWhatWeDo
+        link(rel="icon", type="image/png", href="src/images/favicon.png")
+        link(href='dist/lib/bootstrap.min.css', rel='stylesheet')
+        link(href='src/css/style.css', rel='stylesheet')
+        script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+        script(src='src/js/js.js')
+body
+   .loader_box
+      .loader
+         .double-bounce1
+         .double-bounce2
+    .scrollup
+        svg.scrollup__arrow(width='40px', height='50px', viewbox='0 0 40 80', xml:space='preserve')
+            polyline(fill='none', stroke='#000', stroke-width='3', stroke-linecap='round', stroke-linejoin='round', points='\ 0,20 20,0 40,20 ')
+            polyline(fill='none', stroke='#000', stroke-width='3', stroke-linecap='round', stroke-linejoin='round', points='\ 20,0 20,55 ')
+        a.scrollup__link(href='#') Up
+    .work
+        .container
+            a.logo(href='index.html')
+                svg(width='65', height='65')
+                    rect.logo_rect(x='5', y='5', width='55', height='55', fill='transparent', stroke='#000', stroke-width='2')
+                    line.logo_line(x1='60', y1='5', x2='5', y2='60', stroke='#000', stroke-width='2')
+            nav.menu
+                ul.menu__list.list
+                    li.list__item.active
+                        a.list__link(href='work.html') work
+                    li.list__item
+                        a.list__link(href='about_us.html') about
+                    li.list__item
+                        a.list__link(href='contact.html') contact
+            nav.mobile
+                button.menu_button Toggle
+                    .icon
+                .mobile_menu
+                    ul.mobile__list
+                        li.list__item
+                            a.list__link(href='index.html') home
+                        li.list__item
+                            a.list__link(href='about_us.html') about
+                        li.list__item
+                            a.list__link(href='contact.html') contact
+
+            .work_roof
+                .work_roof__main
+                    h1.work_roof__main.main_text.text.mov.animation
+                        | Passionate
+                        br
+                        | Reliable
+                        br
+                        | Methodical
+                        br
+                        | Experianced
+                    .greenline
+                        span(class="outline outline_green mov animation")
+
+                p.work_roof__about.text.mov.animation Don`t take our word for it. Here we`ve selected the very best work we have been fortunate enough to produce. We love what we do and we hope you do too! Have a poke around, get to know us a bit better.
+
+            ul.works#datalist
+                li.list__item.redbull
+                    .textarea.text.animation
+                        h2.main_text Fly Ride for RedBull
+                        p.motion_text Motion Graphic
+                        p.text Global Design teamed up with Noname team create a more cohesive brand experience as part of their one brand strategy. Our work has been to clarify the visual identity and simplify the packaging design. You`ll find it in stores on 14 markets around the world. Have a taste!
+                        .view
+                            a View Project
+                    .imagediv
+                        .imgdiv
+                            img.image.animation(src='src/images/redbull.jpg')
+                            span(class="outline outline_top animation")
+                            span(class="outline outline_right animation")
+                            span(class="outline outline_bottom animation")
+                            span(class="outline outline_left animation")
+                        .border
+                            span(class="outline--black outline_top--black animation")
+                            span(class="outline--black outline_right--black animation")
+                            span(class="outline--black outline_bottom--black animation")
+                            span(class="outline--black outline_left--black animation")
+                li.list__item.muzychko
+                    .textarea.text.mov
+                        h2.main_text Law Agency Muzychko
+                        p.motion_text Branding Identity, Webdesign
+                        p.text Noname team create a more cohesive brand experience as part of their one brand strategy. Our work has been to clarify the visual identity and simplify the packaging design.
+                        .view
+                            a View Project
+                    .imagediv
+                        .imgdiv
+                            img.image.mov(src='src/images/apple.jpg')
+                            span(class="outline outline_top mov")
+                            span(class="outline outline_right mov")
+                            span(class="outline outline_bottom mov")
+                            span(class="outline outline_left mov")
+                        .border
+                            span(class="outline--black outline_top--black mov")
+                            span(class="outline--black outline_right--black mov")
+                            span(class="outline--black outline_bottom--black mov")
+                            span(class="outline--black outline_left--black mov")
+                li.list__item.maui
+                    .textarea.text.mov
+                        h2.main_text Maui Budget Cars
+                        p.motion_text Video, Motion Graphic
+                        p.text Our work has been to clarify the visual identity and simplify the packaging design. You`ll find it in stores on 14 markets around the world. Have a taste!
+                        .view
+                            a View Project
+                    .imagediv
+                        .imgdiv
+                            img.image.mov(src='src/images/car.jpg')
+                            span(class="outline outline_top mov")
+                            span(class="outline outline_right mov")
+                            span(class="outline outline_bottom mov")
+                            span(class="outline outline_left mov")
+                        .border
+                            span(class="outline--black outline_top--black mov")
+                            span(class="outline--black outline_right--black mov")
+                            span(class="outline--black outline_bottom--black mov")
+                            span(class="outline--black outline_left--black mov")
+                #forMoreWorks
+
+                    li
+                    li.list__item.redbull
+                        .textarea.text.mov
+                            h2.main_text Fly Ride for RedBull
+                            p.motion_text Motion Graphic
+                            p.text Global Design teamed up with Noname team create a more cohesive brand experience as part of their one brand strategy. Our work has been to clarify the visual identity and simplify the packaging design. You`ll find it in stores on 14 markets around the world. Have a taste!
+                            .view
+                                a View Project
+                        .imagediv
+                            .imgdiv
+                                img.image.mov(src='src/images/redbull.jpg')
+                                span(class="outline outline_top mov")
+                                span(class="outline outline_right mov")
+                                span(class="outline outline_bottom mov")
+                                span(class="outline outline_left mov")
+                            .border
+                                span(class="outline--black outline_top--black mov")
+                                span(class="outline--black outline_right--black mov")
+                                span(class="outline--black outline_bottom--black mov")
+                                span(class="outline--black outline_left--black mov")
+                    li.list__item.muzychko
+                        .textarea.text.mov
+                            h2.main_text Law Agency Muzychko
+                            p.motion_text Branding Identity, Webdesign
+                            p.text Noname team create a more cohesive brand experience as part of their one brand strategy. Our work has been to clarify the visual identity and simplify the packaging design.
+                            .view
+                                a View Project
+                        .imagediv
+                            .imgdiv
+                                img.image.mov(src='src/images/apple.jpg')
+                                span(class="outline outline_top mov")
+                                span(class="outline outline_right mov")
+                                span(class="outline outline_bottom mov")
+                                span(class="outline outline_left mov")
+                            .border
+                                span(class="outline--black outline_top--black mov")
+                                span(class="outline--black outline_right--black mov")
+                                span(class="outline--black outline_bottom--black mov")
+                                span(class="outline--black outline_left--black mov")
+                    li.list__item.maui
+                        .textarea.text.mov
+                            h2.main_text Maui Budget Cars
+                            p.motion_text Video, Motion Graphic
+                            p.text Our work has been to clarify the visual identity and simplify the packaging design. You`ll find it in stores on 14 markets around the world. Have a taste!
+                            .view
+                                a View Project
+                        .imagediv
+                            .imgdiv
+                                img.image.mov(src='src/images/car.jpg')
+                                span(class="outline outline_top mov")
+                                span(class="outline outline_right mov")
+                                span(class="outline outline_bottom mov")
+                                span(class="outline outline_left mov")
+                            .border
+                                span(class="outline--black outline_top--black mov")
+                                span(class="outline--black outline_right--black mov")
+                                span(class="outline--black outline_bottom--black mov")
+                                span(class="outline--black outline_left--black mov")
+
+            button#butShowHide.showall
+                        b show all prsojects
+                        span(class="outline outline_top mov")
+                        span(class="outline outline_right mov")
+                        span(class="outline outline_bottom mov")
+                        span(class="outline outline_left mov")
+
+
+
+
+.work_footer.section
+        .gradient
+            .text_footer.mov
+                h3.text We love what we do, we do what we like
+                .shaka.mov
+                    .shaka_hend.mov

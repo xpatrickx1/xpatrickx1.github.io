@@ -1,0 +1,56 @@
+.features {
+
+  &__wrapper {
+    margin: 50px 0;
+  }
+
+  &__block {
+    border: 1px solid #6c757d;
+    height: 8rem;
+
+    &:hover, &:active, &:focus {
+
+      .features__title {
+        color: $orange;
+      }
+
+      .features__circle-out {
+        border-color: $orange;
+      }
+
+      .features__circle-in {
+        border-color: $orange;
+        background: $orange;
+      }
+
+      .features__icon {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    fill: #000;
+  }
+
+  &__circle-out {
+    border: 1px solid #6c757d;
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    top: -40px;
+  }
+
+  &__circle-in {
+    border: 1px solid #6c757d;
+    width: 65px;
+    height: 65px;
+  }
+
+  &__title {
+    font-size: 1.3rem;
+  }
+}
+

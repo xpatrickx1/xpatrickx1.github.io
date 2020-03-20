@@ -1,0 +1,129 @@
+$animationSpeed: .7s;
+
+@keyframes fadeDownTop {
+  from{transform: translate3d(0, -500%, 0)}
+  to{transform: none}
+}
+
+@keyframes fadeUpTop {
+  from{transform: none}
+  to{transform: translate3d(0, -500%, 0)}
+}
+
+@keyframes fadeIn {
+  from{transform: translate3d(500%, 0, 0)}
+  to{transform: none}
+}
+
+@keyframes fadeOut {
+  from{transform: none}
+  to{transform: translate3d(-500%, 0, 0)}
+}
+
+@keyframes fadeUp {
+  from{transform: translate3d(0, 500%, 0)}
+  to{transform: none}
+}
+
+@keyframes fadeDown {
+  from{transform: none}
+  to{transform: translate3d(0, 500%, 0)}
+}
+
+@keyframes fadeInSkills {
+  from{transform: translate3d(500%, 0, 0)}
+  to{transform: none}
+}
+
+@keyframes fadeOutSkills {
+  from{transform: none}
+  to{transform: translate3d(-1300%, 0, 0)}
+}
+
+@keyframes bgInTop {
+  0%{background-position:50% 100%}
+  100%{background-position:50% 0%}
+}
+
+@keyframes bgOutTop {
+  0%{background-position:50% 0%}
+  100%{background-position:50% 100%}
+}
+
+@keyframes bgInButtom {
+  0%{background-position:50% -100%}
+  100%{background-position:50% 0%}
+}
+
+@keyframes bgOutButtom {
+  0%{background-position:50% 0%}
+  100%{background-position:50% -100%}
+}
+
+@keyframes menuBtnClick {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  10% {
+    width: 70%;
+    height: 70%;
+  }
+  90% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@keyframes menuBtnClickSecondRing {
+  0% {
+    width: 60%;
+    height: 60%;
+  }
+  10% {
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes menuBtnClickThirdRing {
+  0% {
+    width: 10%;
+    height: 10%;
+  }
+  10% {
+    width: 4%;
+    height: 4%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes typewriter {
+from {width: 0}
+to {width: 7em}
+}
+
+@keyframes blinkTextCursor {
+  from {border-right-color:rgba(255, 255, 255, 0.75)}
+  to {border-right-color:transparent}
+}
+
+@keyframes hideSlow {
+  from {opacity: 1;}
+  to {opacity: 0;
+    width: 0;
+    height: 0;}
+}
+
+

@@ -1,0 +1,993 @@
+
+<section class="gallery" id="gallery">
+    <div class="container col-12 col-lg-9 d-flex justify-content-center">
+      <div class="col-10 col-md-7 col-lg-10 col-xl-6 mt-5">
+
+        <h5 class="text-uppercase font-weight-bold gallery__title">Furniture gallery</h5>
+        <div class="col-12 col-lg-6 my-2 gallery__underline p-0">
+            <div class="gallery__orange-line"></div>
+        </div>
+
+
+        <!--Tabs-->
+
+        <ul class="nav nav-tabs d-flex mt-4 pt-2 tabs__list">
+            <li class="nav-item flex-grow-1 tabs__item">
+                <a class="nav-link text-uppercase font-weight-bold border rounded-0 py-3 gallery__tab-link active" data-toggle="tab" href="#featured">Featured</a>
+            </li>
+            <li class="nav-item flex-grow-1">
+                <a class="nav-link text-uppercase font-weight-bold border rounded-0 py-3 gallery__tab-link" data-toggle="tab" href="#seller">Top seller</a>
+            </li>
+            <li class="nav-item flex-grow-1">
+                <a class="nav-link text-uppercase font-weight-bold border rounded-0 py-3 gallery__tab-link" data-toggle="tab" href="#sale">Sale off</a>
+            </li>
+            <li class="nav-item flex-grow-1">
+                <a class="nav-link text-uppercase font-weight-bold border rounded-0 py-3 gallery__tab-link" data-toggle="tab" href="#rated">Top rated</a>
+            </li>
+        </ul>
+
+        <!--/Tabs-->
+
+
+
+        <div class="tab-content border bg-light">
+
+          <!--Featured tab-->
+
+          <div class="container tab-pane p-0 active" id="featured"><br>
+
+                <div class="product-slider">
+                    <div id="carousel" class="carousel slide d-flex gallery__carousel" data-ride="carousel">
+
+                        <div class="col gallery__btns-block position-absolute d-flex flex-column justify-content-center align-itms-start">
+                            <button type="button" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Like this!">
+                                <svg class="gallery__btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path class="gallery__btn-img" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3
+                                    275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9
+                                    207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Quick view">
+                                <svg class="gallery__btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path class="gallery__btn-img" fill="currentColor"  d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41
+                                     165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31
+                                     3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                                </svg>
+                            </button>
+                            <button type="button" id="cart" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Add to cart">
+                                <svg class="gallery__btn-img" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                     width="1000.000000pt" viewBox="0 0 1000.000000 908.000000"
+                                     preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,908.000000) scale(0.100000,-0.100000)"
+                                       fill="#000000" stroke="none">
+                                        <path class="gallery__btn-img" fill="currentColor" d="M3876 8757 c-30 -79 -78 -124 -216 -202 -35 -20 -49 -37 -43 -51 4
+                                        -12 -70 -14 -528 -14 -521 0 -534 0 -601 -22 -37 -12 -68 -28 -68 -35 0 -7
+                                        -16 -19 -35 -27 -24 -10 -35 -22 -35 -35 0 -15 -6 -21 -21 -21 -12 0 -40 -16
+                                        -62 -36 -22 -20 -59 -45 -83 -56 -24 -10 -44 -25 -44 -32 0 -8 -16 -21 -35
+                                        -30 -22 -11 -35 -24 -35 -36 0 -12 -9 -22 -23 -25 -23 -6 -105 -91 -161 -169
+                                        -30 -42 -76 -148 -76 -175 1 -36 -606 -2518 -612 -2507 -4 6 -8 22 -8 36 -1
+                                        25 -1 25 -16 5 -8 -11 -18 -32 -21 -47 -3 -16 -10 -28 -15 -28 -6 0 -26 -14
+                                        -46 -31 -49 -44 -106 -67 -193 -79 -40 -6 -112 -24 -159 -41 -47 -16 -92 -32
+                                        -102 -34 -9 -2 -29 -10 -45 -18 -15 -8 -70 -31 -122 -52 -51 -20 -120 -55
+                                        -154 -76 -33 -21 -65 -39 -72 -39 -6 0 -46 -18 -88 -39 -43 -22 -95 -42 -117
+                                        -46 l-40 -7 0 -482 0 -483 52 26 c40 20 67 25 117 25 94 0 241 -20 286 -38 41
+                                        -18 135 -85 135 -98 0 -4 26 -48 59 -97 60 -92 75 -135 86 -248 4 -33 13 -87
+                                        21 -120 9 -32 21 -85 29 -118 7 -33 21 -82 29 -109 9 -27 16 -68 16 -92 0 -23
+                                        4 -64 9 -91 6 -26 15 -93 21 -148 7 -55 18 -125 26 -156 8 -31 14 -74 14 -95
+                                        0 -47 23 -180 66 -374 7 -36 18 -92 24 -125 14 -85 66 -289 80 -315 6 -11 18
+                                        -49 25 -83 20 -84 50 -191 74 -257 11 -30 21 -68 21 -85 0 -63 167 -625 282
+                                        -950 5 -16 17 -55 25 -85 8 -30 23 -84 32 -120 l18 -65 3389 0 3389 0 33 95
+                                        c37 109 66 208 86 297 8 34 22 75 30 92 9 16 16 38 16 48 1 19 18 68 69 198
+                                        18 44 41 107 51 140 10 33 23 74 28 90 21 58 68 237 117 440 14 61 32 130 40
+                                        155 7 25 22 81 33 125 28 112 48 185 60 220 17 47 51 155 67 210 14 47 13 54
+                                        -11 125 -30 87 -29 154 4 236 23 56 55 154 77 232 8 29 23 69 33 90 29 58 117
+                                        375 144 517 5 28 33 100 62 160 39 80 55 126 59 169 12 119 90 222 206 268 51
+                                        20 74 23 246 24 105 1 198 3 208 3 16 1 17 32 17 506 l0 505 -38 0 c-22 0 -61
+                                        7 -88 15 -27 8 -62 15 -77 15 -16 0 -56 6 -90 14 -34 8 -84 19 -112 24 -27 5
+                                        -97 21 -155 35 -58 14 -127 29 -153 32 -26 4 -76 21 -110 39 -34 18 -79 39
+                                        -100 45 -21 7 -58 28 -83 47 -24 19 -51 34 -59 34 -8 0 -15 8 -15 19 0 26 -38
+                                        109 -54 118 -8 4 -15 17 -17 27 -4 19 -18 30 -51 40 -14 4 -18 16 -18 52 0 44
+                                        -42 154 -62 162 -4 2 -8 20 -8 40 -1 21 -9 62 -20 92 -11 30 -19 72 -20 92 0
+                                        20 -7 43 -15 52 -8 8 -15 30 -15 48 0 18 -16 76 -36 128 -68 180 -73 195 -74
+                                        216 0 12 -7 37 -15 57 -8 19 -19 59 -24 88 -5 30 -17 81 -26 114 -38 138 -66
+                                        262 -86 390 -31 193 -83 361 -141 454 -16 25 -28 49 -28 55 0 11 -69 131 -111
+                                        193 -16 22 -37 61 -48 85 -10 23 -42 81 -71 128 -83 133 -88 142 -99 187 -9
+                                        31 -24 52 -62 84 -61 51 -136 99 -204 132 -27 13 -63 35 -80 49 -61 51 -115
+                                        72 -185 71 -36 -1 -76 -3 -90 -5 -22 -3 -25 1 -28 28 -2 23 -9 34 -25 38 -12
+                                        3 -172 6 -355 6 l-332 0 5 23 c9 37 -7 48 -70 48 -48 0 -63 5 -88 27 -86 77
+                                        -126 123 -142 166 l-18 46 -68 0 c-55 0 -69 -3 -69 -15 0 -8 -4 -15 -10 -15
+                                        -5 0 -10 7 -10 15 0 13 -123 15 -1050 15 -927 0 -1050 -2 -1050 -15 0 -8 -4
+                                        -15 -10 -15 -5 0 -10 7 -10 15 0 8 -8 15 -19 15 -12 0 -24 -14 -35 -43z m3086
+                                        -1066 c95 -12 153 -37 210 -88 24 -22 60 -49 80 -62 44 -27 91 -78 118 -130
+                                        10 -22 26 -45 34 -53 7 -8 29 -41 47 -74 18 -32 45 -76 61 -97 15 -21 34 -62
+                                        44 -90 9 -29 25 -69 35 -89 11 -21 25 -63 33 -95 8 -32 21 -75 30 -96 10 -21
+                                        21 -66 25 -100 10 -72 26 -157 47 -244 8 -34 14 -79 14 -100 0 -43 22 -153 40
+                                        -198 6 -16 15 -57 20 -90 20 -143 90 -439 129 -545 26 -69 26 -130 1 -200 -11
+                                        -30 -19 -63 -20 -72 0 -10 -5 -18 -10 -18 -6 0 -47 -31 -93 -70 -116 -99 -172
+                                        -125 -267 -125 -62 0 -85 5 -131 28 l-56 27 -766 0 -767 0 0 34 c0 22 -6 36
+                                        -16 40 -9 3 -743 6 -1632 6 l-1615 0 -66 -26 c-78 -32 -158 -30 -237 5 -40 18
+                                        -59 21 -106 16 l-56 -7 -6 104 c-16 254 -7 496 19 528 14 18 45 177 52 270 3
+                                        36 11 72 18 80 22 25 55 186 55 266 0 69 2 75 24 83 33 13 37 30 43 159 6 112
+                                        6 113 34 128 33 17 38 32 41 129 3 62 6 71 26 80 28 12 42 59 42 141 0 52 3
+                                        62 19 67 18 4 51 81 51 119 0 10 4 18 10 18 5 0 24 19 41 43 23 31 29 49 25
+                                        70 -4 21 -2 27 12 27 10 0 31 14 48 31 40 42 79 64 165 94 151 53 172 56 393
+                                        58 l211 2 65 -31 c36 -17 82 -37 102 -43 86 -28 167 -114 194 -208 l15 -53
+                                        1132 0 1132 1 27 42 c60 92 126 174 167 204 23 18 74 42 114 54 40 11 79 30
+                                        87 40 14 18 26 20 115 17 55 -2 116 0 135 3 41 9 152 4 262 -10z m-968 -3871
+                                        c72 -27 139 -88 173 -158 l28 -57 2 -535 c1 -347 7 -623 17 -785 8 -140 14
+                                        -366 13 -515 l-2 -265 -28 -57 c-55 -111 -153 -173 -277 -173 -124 0 -222 62
+                                        -277 173 l-28 57 -2 295 c-1 162 -8 403 -16 535 -21 328 -22 1208 -1 1281 46
+                                        168 235 265 398 204z m-3587 -5 c100 -30 181 -113 209 -214 8 -31 24 -87 34
+                                        -126 11 -38 20 -91 20 -116 0 -26 9 -67 20 -93 31 -68 36 -136 16 -209 -19
+                                        -71 -19 -74 35 -502 7 -55 12 -273 13 -560 l1 -470 -28 -57 c-104 -211 -389
+                                        -237 -526 -47 -57 79 -77 172 -101 484 -5 69 -18 147 -30 183 -11 35 -20 82
+                                        -20 105 0 43 -12 119 -36 224 -8 34 -14 86 -14 116 0 56 -22 232 -41 332 -10
+                                        50 -20 339 -23 640 -2 151 79 257 232 306 70 22 172 24 239 4z m1767 -35 c119
+                                        -45 201 -158 200 -280 -1 -263 -7 -379 -21 -424 -13 -39 -14 -76 -9 -195 4
+                                        -80 9 -229 11 -331 2 -102 10 -232 16 -290 7 -58 13 -226 13 -375 l1 -270 -28
+                                        -57 c-55 -111 -153 -173 -277 -173 -124 0 -222 62 -277 173 -28 57 -28 58 -30
+                                        287 -1 127 -7 277 -14 335 -6 58 -13 196 -15 307 -1 111 -7 226 -12 255 -11
+                                        57 -15 205 -16 573 l-1 230 28 57 c75 152 276 235 431 178z m3590 -120 c108
+                                        -41 188 -140 202 -251 3 -30 13 -77 20 -105 11 -40 13 -94 9 -246 -3 -107 -9
+                                        -208 -14 -224 -5 -17 -6 -53 -4 -81 3 -28 0 -73 -6 -100 -12 -54 -29 -313 -36
+                                        -563 -3 -91 -11 -267 -18 -391 -13 -212 -15 -230 -41 -282 -54 -110 -152 -172
+                                        -276 -172 -124 0 -222 62 -277 173 -28 56 -28 59 -30 272 -2 167 1 228 13 276
+                                        14 58 16 136 11 449 0 33 5 103 12 155 39 295 51 572 31 719 -10 79 -10 108 0
+                                        150 42 178 235 284 404 221z"/>
+                                    </g>
+                                </svg>
+
+                            </button>
+                        </div>
+
+
+                        <div class="col-7 offset-4 d-flex justify-content-end align-items-center position-absolute p-0 prodinfo">
+                            <div class="rounded-circle d-flex flex-wrap align-items-center justify-content-center prodinfo__circle">
+                                <h4 class="text-light font-weight-bold mt-3 mb-0 prodinfo__price">$120.00</h4>
+                                <h3 class="text-light prodinfo__old-price mt-n4"><s>$160.00</s></h3>
+                            </div>
+                            <div class="bg-white prodinfo__raiting d-flex flex-wrap align-items-center justify-content-center mb-0">
+                                <div class="col-12">
+                                    <h4 class="col-12 font-weight-bold text-center mt-3 prodinfo__title">Aenean Ru Bristiqe</h4>
+                                </div>
+
+                                <div class="col-12 d-flex flex-wrap justify-content-center align-items-start mt-n4  stars">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/top-seller/10.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/11.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/12.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/13.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/14.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/15.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/16.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/17.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/18.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/19.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/20.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="thumbcarousel" class="carousel slide border py-2" data-interval="false">
+                            <div class="carousel-inner gallery__inner">
+                                <div class="carousel-item gallery__thumbs active">
+
+                                    <div data-target="#carousel" data-slide-to="0" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/10.png">
+                                    </div>
+                                    <div data-target="#carousel" data-slide-to="1" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/11.png">
+                                    </div>
+                                    <div data-target="#carousel" data-slide-to="2" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/12.png">
+                                    </div>
+                                    <div data-target="#carousel" data-slide-to="3" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/13.png">
+                                    </div>
+                                    <div data-target="#carousel" data-slide-to="4" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/14.png">
+                                    </div>
+                                </div>
+                                <div class="carousel-item gallery__thumbs">
+                                    <div data-target="#carousel" data-slide-to="5" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/15.png"></div>
+                                    <div data-target="#carousel" data-slide-to="6" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/16.png">
+                                    </div>
+                                    <div data-target="#carousel" data-slide-to="7" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/17.png">
+                                    </div>
+                                    <div data-target="#carousel" data-slide-to="8" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/18.png">
+                                    </div>
+                                    <div data-target="#carousel" data-slide-to="9" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/19.png">
+                                    </div>
+                                    <div data-target="#carousel" data-slide-to="10" class="d-inline-block gallery__thumb">
+                                        <img class="d-block w-100" src="img/top-seller/20.png"></div>
+                                </div>
+                            </div>
+
+                            <!-- /carousel-inner -->
+                            <a class="carousel-control-prev bg-dark my-2 gallery__control" href="#thumbcarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next bg-dark my-2 gallery__control" href="#thumbcarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        <!-- /thumbcarousel -->
+
+                    </div>
+                </div>
+
+        </div>
+
+          <!--/Featured tab-->
+
+
+
+
+          <!--Top seller-->
+
+          <div class="container tab-pane p-0" id="seller"><br>
+
+                <div class="product-slider">
+                    <div id="carousel2" class="carousel slide d-flex gallery__carousel" data-ride="carousel">
+
+                        <div class="col gallery__btns-block position-absolute d-flex flex-column justify-content-center align-itms-start">
+                            <button type="button" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Like this!">
+                                <svg class="gallery__btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path class="gallery__btn-img" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3
+                                    275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9
+                                    207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Quick view">
+                                <svg class="gallery__btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path class="gallery__btn-img" fill="currentColor"  d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41
+                                     165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31
+                                     3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                                </svg>
+                            </button>
+                            <button type="button" id="cart2" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Add to cart">
+                                <svg class="gallery__btn-img" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                     width="1000.000000pt" viewBox="0 0 1000.000000 908.000000"
+                                     preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,908.000000) scale(0.100000,-0.100000)"
+                                       fill="#000000" stroke="none">
+                                        <path class="gallery__btn-img" fill="currentColor" d="M3876 8757 c-30 -79 -78 -124 -216 -202 -35 -20 -49 -37 -43 -51 4
+                                        -12 -70 -14 -528 -14 -521 0 -534 0 -601 -22 -37 -12 -68 -28 -68 -35 0 -7
+                                        -16 -19 -35 -27 -24 -10 -35 -22 -35 -35 0 -15 -6 -21 -21 -21 -12 0 -40 -16
+                                        -62 -36 -22 -20 -59 -45 -83 -56 -24 -10 -44 -25 -44 -32 0 -8 -16 -21 -35
+                                        -30 -22 -11 -35 -24 -35 -36 0 -12 -9 -22 -23 -25 -23 -6 -105 -91 -161 -169
+                                        -30 -42 -76 -148 -76 -175 1 -36 -606 -2518 -612 -2507 -4 6 -8 22 -8 36 -1
+                                        25 -1 25 -16 5 -8 -11 -18 -32 -21 -47 -3 -16 -10 -28 -15 -28 -6 0 -26 -14
+                                        -46 -31 -49 -44 -106 -67 -193 -79 -40 -6 -112 -24 -159 -41 -47 -16 -92 -32
+                                        -102 -34 -9 -2 -29 -10 -45 -18 -15 -8 -70 -31 -122 -52 -51 -20 -120 -55
+                                        -154 -76 -33 -21 -65 -39 -72 -39 -6 0 -46 -18 -88 -39 -43 -22 -95 -42 -117
+                                        -46 l-40 -7 0 -482 0 -483 52 26 c40 20 67 25 117 25 94 0 241 -20 286 -38 41
+                                        -18 135 -85 135 -98 0 -4 26 -48 59 -97 60 -92 75 -135 86 -248 4 -33 13 -87
+                                        21 -120 9 -32 21 -85 29 -118 7 -33 21 -82 29 -109 9 -27 16 -68 16 -92 0 -23
+                                        4 -64 9 -91 6 -26 15 -93 21 -148 7 -55 18 -125 26 -156 8 -31 14 -74 14 -95
+                                        0 -47 23 -180 66 -374 7 -36 18 -92 24 -125 14 -85 66 -289 80 -315 6 -11 18
+                                        -49 25 -83 20 -84 50 -191 74 -257 11 -30 21 -68 21 -85 0 -63 167 -625 282
+                                        -950 5 -16 17 -55 25 -85 8 -30 23 -84 32 -120 l18 -65 3389 0 3389 0 33 95
+                                        c37 109 66 208 86 297 8 34 22 75 30 92 9 16 16 38 16 48 1 19 18 68 69 198
+                                        18 44 41 107 51 140 10 33 23 74 28 90 21 58 68 237 117 440 14 61 32 130 40
+                                        155 7 25 22 81 33 125 28 112 48 185 60 220 17 47 51 155 67 210 14 47 13 54
+                                        -11 125 -30 87 -29 154 4 236 23 56 55 154 77 232 8 29 23 69 33 90 29 58 117
+                                        375 144 517 5 28 33 100 62 160 39 80 55 126 59 169 12 119 90 222 206 268 51
+                                        20 74 23 246 24 105 1 198 3 208 3 16 1 17 32 17 506 l0 505 -38 0 c-22 0 -61
+                                        7 -88 15 -27 8 -62 15 -77 15 -16 0 -56 6 -90 14 -34 8 -84 19 -112 24 -27 5
+                                        -97 21 -155 35 -58 14 -127 29 -153 32 -26 4 -76 21 -110 39 -34 18 -79 39
+                                        -100 45 -21 7 -58 28 -83 47 -24 19 -51 34 -59 34 -8 0 -15 8 -15 19 0 26 -38
+                                        109 -54 118 -8 4 -15 17 -17 27 -4 19 -18 30 -51 40 -14 4 -18 16 -18 52 0 44
+                                        -42 154 -62 162 -4 2 -8 20 -8 40 -1 21 -9 62 -20 92 -11 30 -19 72 -20 92 0
+                                        20 -7 43 -15 52 -8 8 -15 30 -15 48 0 18 -16 76 -36 128 -68 180 -73 195 -74
+                                        216 0 12 -7 37 -15 57 -8 19 -19 59 -24 88 -5 30 -17 81 -26 114 -38 138 -66
+                                        262 -86 390 -31 193 -83 361 -141 454 -16 25 -28 49 -28 55 0 11 -69 131 -111
+                                        193 -16 22 -37 61 -48 85 -10 23 -42 81 -71 128 -83 133 -88 142 -99 187 -9
+                                        31 -24 52 -62 84 -61 51 -136 99 -204 132 -27 13 -63 35 -80 49 -61 51 -115
+                                        72 -185 71 -36 -1 -76 -3 -90 -5 -22 -3 -25 1 -28 28 -2 23 -9 34 -25 38 -12
+                                        3 -172 6 -355 6 l-332 0 5 23 c9 37 -7 48 -70 48 -48 0 -63 5 -88 27 -86 77
+                                        -126 123 -142 166 l-18 46 -68 0 c-55 0 -69 -3 -69 -15 0 -8 -4 -15 -10 -15
+                                        -5 0 -10 7 -10 15 0 13 -123 15 -1050 15 -927 0 -1050 -2 -1050 -15 0 -8 -4
+                                        -15 -10 -15 -5 0 -10 7 -10 15 0 8 -8 15 -19 15 -12 0 -24 -14 -35 -43z m3086
+                                        -1066 c95 -12 153 -37 210 -88 24 -22 60 -49 80 -62 44 -27 91 -78 118 -130
+                                        10 -22 26 -45 34 -53 7 -8 29 -41 47 -74 18 -32 45 -76 61 -97 15 -21 34 -62
+                                        44 -90 9 -29 25 -69 35 -89 11 -21 25 -63 33 -95 8 -32 21 -75 30 -96 10 -21
+                                        21 -66 25 -100 10 -72 26 -157 47 -244 8 -34 14 -79 14 -100 0 -43 22 -153 40
+                                        -198 6 -16 15 -57 20 -90 20 -143 90 -439 129 -545 26 -69 26 -130 1 -200 -11
+                                        -30 -19 -63 -20 -72 0 -10 -5 -18 -10 -18 -6 0 -47 -31 -93 -70 -116 -99 -172
+                                        -125 -267 -125 -62 0 -85 5 -131 28 l-56 27 -766 0 -767 0 0 34 c0 22 -6 36
+                                        -16 40 -9 3 -743 6 -1632 6 l-1615 0 -66 -26 c-78 -32 -158 -30 -237 5 -40 18
+                                        -59 21 -106 16 l-56 -7 -6 104 c-16 254 -7 496 19 528 14 18 45 177 52 270 3
+                                        36 11 72 18 80 22 25 55 186 55 266 0 69 2 75 24 83 33 13 37 30 43 159 6 112
+                                        6 113 34 128 33 17 38 32 41 129 3 62 6 71 26 80 28 12 42 59 42 141 0 52 3
+                                        62 19 67 18 4 51 81 51 119 0 10 4 18 10 18 5 0 24 19 41 43 23 31 29 49 25
+                                        70 -4 21 -2 27 12 27 10 0 31 14 48 31 40 42 79 64 165 94 151 53 172 56 393
+                                        58 l211 2 65 -31 c36 -17 82 -37 102 -43 86 -28 167 -114 194 -208 l15 -53
+                                        1132 0 1132 1 27 42 c60 92 126 174 167 204 23 18 74 42 114 54 40 11 79 30
+                                        87 40 14 18 26 20 115 17 55 -2 116 0 135 3 41 9 152 4 262 -10z m-968 -3871
+                                        c72 -27 139 -88 173 -158 l28 -57 2 -535 c1 -347 7 -623 17 -785 8 -140 14
+                                        -366 13 -515 l-2 -265 -28 -57 c-55 -111 -153 -173 -277 -173 -124 0 -222 62
+                                        -277 173 l-28 57 -2 295 c-1 162 -8 403 -16 535 -21 328 -22 1208 -1 1281 46
+                                        168 235 265 398 204z m-3587 -5 c100 -30 181 -113 209 -214 8 -31 24 -87 34
+                                        -126 11 -38 20 -91 20 -116 0 -26 9 -67 20 -93 31 -68 36 -136 16 -209 -19
+                                        -71 -19 -74 35 -502 7 -55 12 -273 13 -560 l1 -470 -28 -57 c-104 -211 -389
+                                        -237 -526 -47 -57 79 -77 172 -101 484 -5 69 -18 147 -30 183 -11 35 -20 82
+                                        -20 105 0 43 -12 119 -36 224 -8 34 -14 86 -14 116 0 56 -22 232 -41 332 -10
+                                        50 -20 339 -23 640 -2 151 79 257 232 306 70 22 172 24 239 4z m1767 -35 c119
+                                        -45 201 -158 200 -280 -1 -263 -7 -379 -21 -424 -13 -39 -14 -76 -9 -195 4
+                                        -80 9 -229 11 -331 2 -102 10 -232 16 -290 7 -58 13 -226 13 -375 l1 -270 -28
+                                        -57 c-55 -111 -153 -173 -277 -173 -124 0 -222 62 -277 173 -28 57 -28 58 -30
+                                        287 -1 127 -7 277 -14 335 -6 58 -13 196 -15 307 -1 111 -7 226 -12 255 -11
+                                        57 -15 205 -16 573 l-1 230 28 57 c75 152 276 235 431 178z m3590 -120 c108
+                                        -41 188 -140 202 -251 3 -30 13 -77 20 -105 11 -40 13 -94 9 -246 -3 -107 -9
+                                        -208 -14 -224 -5 -17 -6 -53 -4 -81 3 -28 0 -73 -6 -100 -12 -54 -29 -313 -36
+                                        -563 -3 -91 -11 -267 -18 -391 -13 -212 -15 -230 -41 -282 -54 -110 -152 -172
+                                        -276 -172 -124 0 -222 62 -277 173 -28 56 -28 59 -30 272 -2 167 1 228 13 276
+                                        14 58 16 136 11 449 0 33 5 103 12 155 39 295 51 572 31 719 -10 79 -10 108 0
+                                        150 42 178 235 284 404 221z"/>
+                                    </g>
+                                </svg>
+
+                            </button>
+                        </div>
+
+
+                        <div class="col-7 offset-4 d-flex justify-content-end align-items-center position-absolute p-0 prodinfo">
+                            <div class="rounded-circle d-flex flex-wrap align-items-center justify-content-center prodinfo__circle">
+                                <h4 class="text-light font-weight-bold mt-3 mb-0 prodinfo__price">$120.00</h4>
+                                <h3 class="text-light prodinfo__old-price mt-n4"><s>$160.00</s></h3>
+                            </div>
+                            <div class="bg-white prodinfo__raiting d-flex flex-wrap align-items-center justify-content-center mb-0">
+                                <div class="col-12">
+                                    <h4 class="col-12 font-weight-bold text-center mt-3 prodinfo__title">Aenean Ru Bristiqe</h4>
+                                </div>
+
+                                <div class="col-12 d-flex flex-wrap justify-content-center align-items-start mt-n4  stars">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/top-seller/10.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/11.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/12.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/13.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/14.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/15.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/16.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/17.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/18.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/19.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/20.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="thumbcarousel2" class="carousel slide border py-2" data-interval="false">
+                        <div class="carousel-inner gallery__inner">
+                            <div class="carousel-item gallery__thumbs active">
+
+                                <div data-target="#carousel" data-slide-to="0" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/10.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="1" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/11.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="2" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/12.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="3" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/13.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="4" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/14.png">
+                                </div>
+                            </div>
+                            <div class="carousel-item gallery__thumbs">
+                                <div data-target="#carousel" data-slide-to="5" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/15.png"></div>
+                                <div data-target="#carousel" data-slide-to="6" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/16.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="7" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/17.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="8" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/18.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="9" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/19.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="10" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/20.png"></div>
+                            </div>
+                        </div>
+
+                        <!-- /carousel-inner -->
+
+
+                        <a class="carousel-control-prev bg-dark my-2 gallery__control" href="#thumbcarousel2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next bg-dark my-2 gallery__control" href="#thumbcarousel2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!-- /thumbcarousel -->
+
+                    </div>
+                </div>
+
+            </div>
+
+          <!--Top seller-->
+
+
+
+          <!--Sale off tab-->
+
+            <div class="container tab-pane p-0" id="sale"><br>
+
+                <div class="product-slider">
+                    <div id="carousel3" class="carousel slide d-flex gallery__carousel" data-ride="carousel">
+
+                        <div class="col gallery__btns-block position-absolute d-flex flex-column justify-content-center align-itms-start">
+                            <button type="button" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Like this!">
+                                <svg class="gallery__btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path class="gallery__btn-img" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3
+                                    275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9
+                                    207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Quick view">
+                                <svg class="gallery__btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path class="gallery__btn-img" fill="currentColor"  d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41
+                                     165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31
+                                     3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                                </svg>
+                            </button>
+                            <button type="button" id="cart3" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Add to cart">
+                                <svg class="gallery__btn-img" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                     width="1000.000000pt" viewBox="0 0 1000.000000 908.000000"
+                                     preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,908.000000) scale(0.100000,-0.100000)"
+                                       fill="#000000" stroke="none">
+                                        <path class="gallery__btn-img" fill="currentColor" d="M3876 8757 c-30 -79 -78 -124 -216 -202 -35 -20 -49 -37 -43 -51 4
+                                        -12 -70 -14 -528 -14 -521 0 -534 0 -601 -22 -37 -12 -68 -28 -68 -35 0 -7
+                                        -16 -19 -35 -27 -24 -10 -35 -22 -35 -35 0 -15 -6 -21 -21 -21 -12 0 -40 -16
+                                        -62 -36 -22 -20 -59 -45 -83 -56 -24 -10 -44 -25 -44 -32 0 -8 -16 -21 -35
+                                        -30 -22 -11 -35 -24 -35 -36 0 -12 -9 -22 -23 -25 -23 -6 -105 -91 -161 -169
+                                        -30 -42 -76 -148 -76 -175 1 -36 -606 -2518 -612 -2507 -4 6 -8 22 -8 36 -1
+                                        25 -1 25 -16 5 -8 -11 -18 -32 -21 -47 -3 -16 -10 -28 -15 -28 -6 0 -26 -14
+                                        -46 -31 -49 -44 -106 -67 -193 -79 -40 -6 -112 -24 -159 -41 -47 -16 -92 -32
+                                        -102 -34 -9 -2 -29 -10 -45 -18 -15 -8 -70 -31 -122 -52 -51 -20 -120 -55
+                                        -154 -76 -33 -21 -65 -39 -72 -39 -6 0 -46 -18 -88 -39 -43 -22 -95 -42 -117
+                                        -46 l-40 -7 0 -482 0 -483 52 26 c40 20 67 25 117 25 94 0 241 -20 286 -38 41
+                                        -18 135 -85 135 -98 0 -4 26 -48 59 -97 60 -92 75 -135 86 -248 4 -33 13 -87
+                                        21 -120 9 -32 21 -85 29 -118 7 -33 21 -82 29 -109 9 -27 16 -68 16 -92 0 -23
+                                        4 -64 9 -91 6 -26 15 -93 21 -148 7 -55 18 -125 26 -156 8 -31 14 -74 14 -95
+                                        0 -47 23 -180 66 -374 7 -36 18 -92 24 -125 14 -85 66 -289 80 -315 6 -11 18
+                                        -49 25 -83 20 -84 50 -191 74 -257 11 -30 21 -68 21 -85 0 -63 167 -625 282
+                                        -950 5 -16 17 -55 25 -85 8 -30 23 -84 32 -120 l18 -65 3389 0 3389 0 33 95
+                                        c37 109 66 208 86 297 8 34 22 75 30 92 9 16 16 38 16 48 1 19 18 68 69 198
+                                        18 44 41 107 51 140 10 33 23 74 28 90 21 58 68 237 117 440 14 61 32 130 40
+                                        155 7 25 22 81 33 125 28 112 48 185 60 220 17 47 51 155 67 210 14 47 13 54
+                                        -11 125 -30 87 -29 154 4 236 23 56 55 154 77 232 8 29 23 69 33 90 29 58 117
+                                        375 144 517 5 28 33 100 62 160 39 80 55 126 59 169 12 119 90 222 206 268 51
+                                        20 74 23 246 24 105 1 198 3 208 3 16 1 17 32 17 506 l0 505 -38 0 c-22 0 -61
+                                        7 -88 15 -27 8 -62 15 -77 15 -16 0 -56 6 -90 14 -34 8 -84 19 -112 24 -27 5
+                                        -97 21 -155 35 -58 14 -127 29 -153 32 -26 4 -76 21 -110 39 -34 18 -79 39
+                                        -100 45 -21 7 -58 28 -83 47 -24 19 -51 34 -59 34 -8 0 -15 8 -15 19 0 26 -38
+                                        109 -54 118 -8 4 -15 17 -17 27 -4 19 -18 30 -51 40 -14 4 -18 16 -18 52 0 44
+                                        -42 154 -62 162 -4 2 -8 20 -8 40 -1 21 -9 62 -20 92 -11 30 -19 72 -20 92 0
+                                        20 -7 43 -15 52 -8 8 -15 30 -15 48 0 18 -16 76 -36 128 -68 180 -73 195 -74
+                                        216 0 12 -7 37 -15 57 -8 19 -19 59 -24 88 -5 30 -17 81 -26 114 -38 138 -66
+                                        262 -86 390 -31 193 -83 361 -141 454 -16 25 -28 49 -28 55 0 11 -69 131 -111
+                                        193 -16 22 -37 61 -48 85 -10 23 -42 81 -71 128 -83 133 -88 142 -99 187 -9
+                                        31 -24 52 -62 84 -61 51 -136 99 -204 132 -27 13 -63 35 -80 49 -61 51 -115
+                                        72 -185 71 -36 -1 -76 -3 -90 -5 -22 -3 -25 1 -28 28 -2 23 -9 34 -25 38 -12
+                                        3 -172 6 -355 6 l-332 0 5 23 c9 37 -7 48 -70 48 -48 0 -63 5 -88 27 -86 77
+                                        -126 123 -142 166 l-18 46 -68 0 c-55 0 -69 -3 -69 -15 0 -8 -4 -15 -10 -15
+                                        -5 0 -10 7 -10 15 0 13 -123 15 -1050 15 -927 0 -1050 -2 -1050 -15 0 -8 -4
+                                        -15 -10 -15 -5 0 -10 7 -10 15 0 8 -8 15 -19 15 -12 0 -24 -14 -35 -43z m3086
+                                        -1066 c95 -12 153 -37 210 -88 24 -22 60 -49 80 -62 44 -27 91 -78 118 -130
+                                        10 -22 26 -45 34 -53 7 -8 29 -41 47 -74 18 -32 45 -76 61 -97 15 -21 34 -62
+                                        44 -90 9 -29 25 -69 35 -89 11 -21 25 -63 33 -95 8 -32 21 -75 30 -96 10 -21
+                                        21 -66 25 -100 10 -72 26 -157 47 -244 8 -34 14 -79 14 -100 0 -43 22 -153 40
+                                        -198 6 -16 15 -57 20 -90 20 -143 90 -439 129 -545 26 -69 26 -130 1 -200 -11
+                                        -30 -19 -63 -20 -72 0 -10 -5 -18 -10 -18 -6 0 -47 -31 -93 -70 -116 -99 -172
+                                        -125 -267 -125 -62 0 -85 5 -131 28 l-56 27 -766 0 -767 0 0 34 c0 22 -6 36
+                                        -16 40 -9 3 -743 6 -1632 6 l-1615 0 -66 -26 c-78 -32 -158 -30 -237 5 -40 18
+                                        -59 21 -106 16 l-56 -7 -6 104 c-16 254 -7 496 19 528 14 18 45 177 52 270 3
+                                        36 11 72 18 80 22 25 55 186 55 266 0 69 2 75 24 83 33 13 37 30 43 159 6 112
+                                        6 113 34 128 33 17 38 32 41 129 3 62 6 71 26 80 28 12 42 59 42 141 0 52 3
+                                        62 19 67 18 4 51 81 51 119 0 10 4 18 10 18 5 0 24 19 41 43 23 31 29 49 25
+                                        70 -4 21 -2 27 12 27 10 0 31 14 48 31 40 42 79 64 165 94 151 53 172 56 393
+                                        58 l211 2 65 -31 c36 -17 82 -37 102 -43 86 -28 167 -114 194 -208 l15 -53
+                                        1132 0 1132 1 27 42 c60 92 126 174 167 204 23 18 74 42 114 54 40 11 79 30
+                                        87 40 14 18 26 20 115 17 55 -2 116 0 135 3 41 9 152 4 262 -10z m-968 -3871
+                                        c72 -27 139 -88 173 -158 l28 -57 2 -535 c1 -347 7 -623 17 -785 8 -140 14
+                                        -366 13 -515 l-2 -265 -28 -57 c-55 -111 -153 -173 -277 -173 -124 0 -222 62
+                                        -277 173 l-28 57 -2 295 c-1 162 -8 403 -16 535 -21 328 -22 1208 -1 1281 46
+                                        168 235 265 398 204z m-3587 -5 c100 -30 181 -113 209 -214 8 -31 24 -87 34
+                                        -126 11 -38 20 -91 20 -116 0 -26 9 -67 20 -93 31 -68 36 -136 16 -209 -19
+                                        -71 -19 -74 35 -502 7 -55 12 -273 13 -560 l1 -470 -28 -57 c-104 -211 -389
+                                        -237 -526 -47 -57 79 -77 172 -101 484 -5 69 -18 147 -30 183 -11 35 -20 82
+                                        -20 105 0 43 -12 119 -36 224 -8 34 -14 86 -14 116 0 56 -22 232 -41 332 -10
+                                        50 -20 339 -23 640 -2 151 79 257 232 306 70 22 172 24 239 4z m1767 -35 c119
+                                        -45 201 -158 200 -280 -1 -263 -7 -379 -21 -424 -13 -39 -14 -76 -9 -195 4
+                                        -80 9 -229 11 -331 2 -102 10 -232 16 -290 7 -58 13 -226 13 -375 l1 -270 -28
+                                        -57 c-55 -111 -153 -173 -277 -173 -124 0 -222 62 -277 173 -28 57 -28 58 -30
+                                        287 -1 127 -7 277 -14 335 -6 58 -13 196 -15 307 -1 111 -7 226 -12 255 -11
+                                        57 -15 205 -16 573 l-1 230 28 57 c75 152 276 235 431 178z m3590 -120 c108
+                                        -41 188 -140 202 -251 3 -30 13 -77 20 -105 11 -40 13 -94 9 -246 -3 -107 -9
+                                        -208 -14 -224 -5 -17 -6 -53 -4 -81 3 -28 0 -73 -6 -100 -12 -54 -29 -313 -36
+                                        -563 -3 -91 -11 -267 -18 -391 -13 -212 -15 -230 -41 -282 -54 -110 -152 -172
+                                        -276 -172 -124 0 -222 62 -277 173 -28 56 -28 59 -30 272 -2 167 1 228 13 276
+                                        14 58 16 136 11 449 0 33 5 103 12 155 39 295 51 572 31 719 -10 79 -10 108 0
+                                        150 42 178 235 284 404 221z"/>
+                                    </g>
+                                </svg>
+
+                            </button>
+                        </div>
+
+
+                        <div class="col-7 offset-4 d-flex justify-content-end align-items-center position-absolute p-0 prodinfo">
+                            <div class="rounded-circle d-flex flex-wrap align-items-center justify-content-center prodinfo__circle">
+                                <h4 class="text-light font-weight-bold mt-3 mb-0 prodinfo__price">$120.00</h4>
+                                <h3 class="text-light prodinfo__old-price mt-n4"><s>$160.00</s></h3>
+                            </div>
+                            <div class="bg-white prodinfo__raiting d-flex flex-wrap align-items-center justify-content-center mb-0">
+                                <div class="col-12">
+                                    <h4 class="col-12 font-weight-bold text-center mt-3 prodinfo__title">Aenean Ru Bristiqe</h4>
+                                </div>
+
+                                <div class="col-12 d-flex flex-wrap justify-content-center align-items-start mt-n4  stars">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/top-seller/10.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/11.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/12.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/13.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/14.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/15.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/16.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/17.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/18.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/19.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/20.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="thumbcarousel3" class="carousel slide border py-2" data-interval="false">
+                        <div class="carousel-inner gallery__inner">
+                            <div class="carousel-item gallery__thumbs active">
+
+                                <div data-target="#carousel" data-slide-to="0" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/10.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="1" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/11.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="2" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/12.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="3" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/13.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="4" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/14.png">
+                                </div>
+                            </div>
+                            <div class="carousel-item gallery__thumbs">
+                                <div data-target="#carousel" data-slide-to="5" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/15.png"></div>
+                                <div data-target="#carousel" data-slide-to="6" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/16.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="7" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/17.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="8" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/18.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="9" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/19.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="10" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/20.png"></div>
+                            </div>
+                        </div>
+
+                        <!-- /carousel-inner -->
+
+
+                        <a class="carousel-control-prev bg-dark my-2 gallery__control" href="#thumbcarousel3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next bg-dark my-2 gallery__control" href="#thumbcarousel3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!-- /thumbcarousel -->
+
+                    </div>
+                </div>
+
+            </div>
+
+          <!--/Sale off tab-->
+
+
+
+          <!--Top rated    -->
+
+            <div class="container tab-pane p-0" id="rated"><br>
+
+                <div class="product-slider">
+                    <div id="carousel4" class="carousel slide d-flex gallery__carousel" data-ride="carousel">
+
+                        <div class="col gallery__btns-block position-absolute d-flex flex-column justify-content-center align-itms-start">
+                            <button type="button" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Like this!">
+                                <svg class="gallery__btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path class="gallery__btn-img" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3
+                                    275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9
+                                    207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Quick view">
+                                <svg class="gallery__btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path class="gallery__btn-img" fill="currentColor"  d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41
+                                     165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31
+                                     3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/>
+                                </svg>
+                            </button>
+                            <button type="button" id="cart4" class="btn btn-link rounded-0 bg-light my-2 gallery__btn" data-toggle="tooltip" data-placement="right" title="Add to cart">
+                                <svg class="gallery__btn-img" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                     width="1000.000000pt" viewBox="0 0 1000.000000 908.000000"
+                                     preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,908.000000) scale(0.100000,-0.100000)"
+                                       fill="#000000" stroke="none">
+                                        <path class="gallery__btn-img" fill="currentColor" d="M3876 8757 c-30 -79 -78 -124 -216 -202 -35 -20 -49 -37 -43 -51 4
+                                        -12 -70 -14 -528 -14 -521 0 -534 0 -601 -22 -37 -12 -68 -28 -68 -35 0 -7
+                                        -16 -19 -35 -27 -24 -10 -35 -22 -35 -35 0 -15 -6 -21 -21 -21 -12 0 -40 -16
+                                        -62 -36 -22 -20 -59 -45 -83 -56 -24 -10 -44 -25 -44 -32 0 -8 -16 -21 -35
+                                        -30 -22 -11 -35 -24 -35 -36 0 -12 -9 -22 -23 -25 -23 -6 -105 -91 -161 -169
+                                        -30 -42 -76 -148 -76 -175 1 -36 -606 -2518 -612 -2507 -4 6 -8 22 -8 36 -1
+                                        25 -1 25 -16 5 -8 -11 -18 -32 -21 -47 -3 -16 -10 -28 -15 -28 -6 0 -26 -14
+                                        -46 -31 -49 -44 -106 -67 -193 -79 -40 -6 -112 -24 -159 -41 -47 -16 -92 -32
+                                        -102 -34 -9 -2 -29 -10 -45 -18 -15 -8 -70 -31 -122 -52 -51 -20 -120 -55
+                                        -154 -76 -33 -21 -65 -39 -72 -39 -6 0 -46 -18 -88 -39 -43 -22 -95 -42 -117
+                                        -46 l-40 -7 0 -482 0 -483 52 26 c40 20 67 25 117 25 94 0 241 -20 286 -38 41
+                                        -18 135 -85 135 -98 0 -4 26 -48 59 -97 60 -92 75 -135 86 -248 4 -33 13 -87
+                                        21 -120 9 -32 21 -85 29 -118 7 -33 21 -82 29 -109 9 -27 16 -68 16 -92 0 -23
+                                        4 -64 9 -91 6 -26 15 -93 21 -148 7 -55 18 -125 26 -156 8 -31 14 -74 14 -95
+                                        0 -47 23 -180 66 -374 7 -36 18 -92 24 -125 14 -85 66 -289 80 -315 6 -11 18
+                                        -49 25 -83 20 -84 50 -191 74 -257 11 -30 21 -68 21 -85 0 -63 167 -625 282
+                                        -950 5 -16 17 -55 25 -85 8 -30 23 -84 32 -120 l18 -65 3389 0 3389 0 33 95
+                                        c37 109 66 208 86 297 8 34 22 75 30 92 9 16 16 38 16 48 1 19 18 68 69 198
+                                        18 44 41 107 51 140 10 33 23 74 28 90 21 58 68 237 117 440 14 61 32 130 40
+                                        155 7 25 22 81 33 125 28 112 48 185 60 220 17 47 51 155 67 210 14 47 13 54
+                                        -11 125 -30 87 -29 154 4 236 23 56 55 154 77 232 8 29 23 69 33 90 29 58 117
+                                        375 144 517 5 28 33 100 62 160 39 80 55 126 59 169 12 119 90 222 206 268 51
+                                        20 74 23 246 24 105 1 198 3 208 3 16 1 17 32 17 506 l0 505 -38 0 c-22 0 -61
+                                        7 -88 15 -27 8 -62 15 -77 15 -16 0 -56 6 -90 14 -34 8 -84 19 -112 24 -27 5
+                                        -97 21 -155 35 -58 14 -127 29 -153 32 -26 4 -76 21 -110 39 -34 18 -79 39
+                                        -100 45 -21 7 -58 28 -83 47 -24 19 -51 34 -59 34 -8 0 -15 8 -15 19 0 26 -38
+                                        109 -54 118 -8 4 -15 17 -17 27 -4 19 -18 30 -51 40 -14 4 -18 16 -18 52 0 44
+                                        -42 154 -62 162 -4 2 -8 20 -8 40 -1 21 -9 62 -20 92 -11 30 -19 72 -20 92 0
+                                        20 -7 43 -15 52 -8 8 -15 30 -15 48 0 18 -16 76 -36 128 -68 180 -73 195 -74
+                                        216 0 12 -7 37 -15 57 -8 19 -19 59 -24 88 -5 30 -17 81 -26 114 -38 138 -66
+                                        262 -86 390 -31 193 -83 361 -141 454 -16 25 -28 49 -28 55 0 11 -69 131 -111
+                                        193 -16 22 -37 61 -48 85 -10 23 -42 81 -71 128 -83 133 -88 142 -99 187 -9
+                                        31 -24 52 -62 84 -61 51 -136 99 -204 132 -27 13 -63 35 -80 49 -61 51 -115
+                                        72 -185 71 -36 -1 -76 -3 -90 -5 -22 -3 -25 1 -28 28 -2 23 -9 34 -25 38 -12
+                                        3 -172 6 -355 6 l-332 0 5 23 c9 37 -7 48 -70 48 -48 0 -63 5 -88 27 -86 77
+                                        -126 123 -142 166 l-18 46 -68 0 c-55 0 -69 -3 -69 -15 0 -8 -4 -15 -10 -15
+                                        -5 0 -10 7 -10 15 0 13 -123 15 -1050 15 -927 0 -1050 -2 -1050 -15 0 -8 -4
+                                        -15 -10 -15 -5 0 -10 7 -10 15 0 8 -8 15 -19 15 -12 0 -24 -14 -35 -43z m3086
+                                        -1066 c95 -12 153 -37 210 -88 24 -22 60 -49 80 -62 44 -27 91 -78 118 -130
+                                        10 -22 26 -45 34 -53 7 -8 29 -41 47 -74 18 -32 45 -76 61 -97 15 -21 34 -62
+                                        44 -90 9 -29 25 -69 35 -89 11 -21 25 -63 33 -95 8 -32 21 -75 30 -96 10 -21
+                                        21 -66 25 -100 10 -72 26 -157 47 -244 8 -34 14 -79 14 -100 0 -43 22 -153 40
+                                        -198 6 -16 15 -57 20 -90 20 -143 90 -439 129 -545 26 -69 26 -130 1 -200 -11
+                                        -30 -19 -63 -20 -72 0 -10 -5 -18 -10 -18 -6 0 -47 -31 -93 -70 -116 -99 -172
+                                        -125 -267 -125 -62 0 -85 5 -131 28 l-56 27 -766 0 -767 0 0 34 c0 22 -6 36
+                                        -16 40 -9 3 -743 6 -1632 6 l-1615 0 -66 -26 c-78 -32 -158 -30 -237 5 -40 18
+                                        -59 21 -106 16 l-56 -7 -6 104 c-16 254 -7 496 19 528 14 18 45 177 52 270 3
+                                        36 11 72 18 80 22 25 55 186 55 266 0 69 2 75 24 83 33 13 37 30 43 159 6 112
+                                        6 113 34 128 33 17 38 32 41 129 3 62 6 71 26 80 28 12 42 59 42 141 0 52 3
+                                        62 19 67 18 4 51 81 51 119 0 10 4 18 10 18 5 0 24 19 41 43 23 31 29 49 25
+                                        70 -4 21 -2 27 12 27 10 0 31 14 48 31 40 42 79 64 165 94 151 53 172 56 393
+                                        58 l211 2 65 -31 c36 -17 82 -37 102 -43 86 -28 167 -114 194 -208 l15 -53
+                                        1132 0 1132 1 27 42 c60 92 126 174 167 204 23 18 74 42 114 54 40 11 79 30
+                                        87 40 14 18 26 20 115 17 55 -2 116 0 135 3 41 9 152 4 262 -10z m-968 -3871
+                                        c72 -27 139 -88 173 -158 l28 -57 2 -535 c1 -347 7 -623 17 -785 8 -140 14
+                                        -366 13 -515 l-2 -265 -28 -57 c-55 -111 -153 -173 -277 -173 -124 0 -222 62
+                                        -277 173 l-28 57 -2 295 c-1 162 -8 403 -16 535 -21 328 -22 1208 -1 1281 46
+                                        168 235 265 398 204z m-3587 -5 c100 -30 181 -113 209 -214 8 -31 24 -87 34
+                                        -126 11 -38 20 -91 20 -116 0 -26 9 -67 20 -93 31 -68 36 -136 16 -209 -19
+                                        -71 -19 -74 35 -502 7 -55 12 -273 13 -560 l1 -470 -28 -57 c-104 -211 -389
+                                        -237 -526 -47 -57 79 -77 172 -101 484 -5 69 -18 147 -30 183 -11 35 -20 82
+                                        -20 105 0 43 -12 119 -36 224 -8 34 -14 86 -14 116 0 56 -22 232 -41 332 -10
+                                        50 -20 339 -23 640 -2 151 79 257 232 306 70 22 172 24 239 4z m1767 -35 c119
+                                        -45 201 -158 200 -280 -1 -263 -7 -379 -21 -424 -13 -39 -14 -76 -9 -195 4
+                                        -80 9 -229 11 -331 2 -102 10 -232 16 -290 7 -58 13 -226 13 -375 l1 -270 -28
+                                        -57 c-55 -111 -153 -173 -277 -173 -124 0 -222 62 -277 173 -28 57 -28 58 -30
+                                        287 -1 127 -7 277 -14 335 -6 58 -13 196 -15 307 -1 111 -7 226 -12 255 -11
+                                        57 -15 205 -16 573 l-1 230 28 57 c75 152 276 235 431 178z m3590 -120 c108
+                                        -41 188 -140 202 -251 3 -30 13 -77 20 -105 11 -40 13 -94 9 -246 -3 -107 -9
+                                        -208 -14 -224 -5 -17 -6 -53 -4 -81 3 -28 0 -73 -6 -100 -12 -54 -29 -313 -36
+                                        -563 -3 -91 -11 -267 -18 -391 -13 -212 -15 -230 -41 -282 -54 -110 -152 -172
+                                        -276 -172 -124 0 -222 62 -277 173 -28 56 -28 59 -30 272 -2 167 1 228 13 276
+                                        14 58 16 136 11 449 0 33 5 103 12 155 39 295 51 572 31 719 -10 79 -10 108 0
+                                        150 42 178 235 284 404 221z"/>
+                                    </g>
+                                </svg>
+
+                            </button>
+                        </div>
+
+
+                        <div class="col-7 offset-4 d-flex justify-content-end align-items-center position-absolute p-0 prodinfo">
+                            <div class="rounded-circle d-flex flex-wrap align-items-center justify-content-center prodinfo__circle">
+                                <h4 class="text-light font-weight-bold mt-3 mb-0 prodinfo__price">$120.00</h4>
+                                <h3 class="text-light prodinfo__old-price mt-n4"><s>$160.00</s></h3>
+                            </div>
+                            <div class="bg-white prodinfo__raiting d-flex flex-wrap align-items-center justify-content-center mb-0">
+                                <div class="col-12">
+                                    <h4 class="col-12 font-weight-bold text-center mt-3 prodinfo__title">Aenean Ru Bristiqe</h4>
+                                </div>
+
+                                <div class="col-12 d-flex flex-wrap justify-content-center align-items-start mt-n4  stars">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="prodinfo__star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/top-seller/10.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/11.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/12.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/13.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/14.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/15.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/16.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/17.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/18.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/19.png" class="d-block w-100" alt="furniture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/top-seller/20.png" class="d-block w-50 mx-auto" alt="furniture">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="thumbcarousel4" class="carousel slide border py-2" data-interval="false">
+                        <div class="carousel-inner gallery__inner">
+                            <div class="carousel-item gallery__thumbs active">
+
+                                <div data-target="#carousel" data-slide-to="0" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/10.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="1" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/11.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="2" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/12.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="3" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/13.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="4" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/14.png">
+                                </div>
+                            </div>
+                            <div class="carousel-item gallery__thumbs">
+                                <div data-target="#carousel" data-slide-to="5" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/15.png"></div>
+                                <div data-target="#carousel" data-slide-to="6" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/16.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="7" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/17.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="8" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/18.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="9" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/19.png">
+                                </div>
+                                <div data-target="#carousel" data-slide-to="10" class="d-inline-block gallery__thumb">
+                                    <img class="d-block w-100" src="img/top-seller/20.png"></div>
+                            </div>
+                        </div>
+
+                        <!-- /carousel-inner -->
+
+
+                        <a class="carousel-control-prev bg-dark my-2 gallery__control" href="#thumbcarousel4" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next bg-dark my-2 gallery__control" href="#thumbcarousel4" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!-- /thumbcarousel -->
+
+                    </div>
+                </div>
+
+            </div>
+
+          <!--/Top rated    -->
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+    <!--Bedroom bad banner-->
+
+      <div class="col-xl-6 bg-light mt-5 d-none d-xl-block">
+            <div class="row flex-nowrap align-items-end bedroom__price">
+                <h5 class="col-2 offset-1 text-uppercase font-weight-bold ml-5 pr-0">from</h5>
+                <h3 class="col-4 display-4 text-success font-weight-bold pl-0">$50.80</h3>
+            </div>
+            <div class="row">
+                <h1 class="col-8 offset-1 font-weight-bold display-4 bedroom__title">Bedroom Bed</h1>
+            </div>
+            <div class="row mt-2">
+                <button type="button" class="btn btn-success my-2 text-light text-uppercase py-3 bedroom__buy">buy now</button>
+            </div>
+
+            <img class="bedroom__img" src="img/furniture/bedroom-bed-banner.png" alt="bedroom-bed">
+        </div>
+
+    <!--/Bedroom bad banner-->
+
+    </div>
+</section>

@@ -1,0 +1,53 @@
+.loaderBox {
+  animation: hideSlow .1s;
+}
+
+.loader_box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background: #000;
+  opacity: 0.9;
+  width: 100%;
+  transition: all .3s ease;
+}
+
+.hideSlow {
+  animation: hideSlow .1s ease forwards;
+}
+
+.loader {
+  height: 60px;
+  width: 200px;
+  margin: -30px auto 0;
+  right: 0;
+  left: 0;
+  top: 50%;
+  display: inline-block;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.line-1 {
+  color: #c3c3c3;
+  position: relative;
+  top: 50%;
+  width: 10em;
+  height: 40px;
+  margin: 0 auto;
+  border-right: 6px solid rgba(255, 255, 255, 0.75);
+  border-radius: 2px;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.anim-typewriter {
+  animation: typewriter 0.4s steps(15) 1s 1 normal both, blinkTextCursor 650ms steps(15) infinite normal
+}

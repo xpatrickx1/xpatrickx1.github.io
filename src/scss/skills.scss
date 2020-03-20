@@ -1,0 +1,384 @@
+$animation-delay: 0.01s;
+
+.skills {
+  flex: 1 0 auto;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__title-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 15%;
+    &.animIn{
+      animation: fadeDownTop $animationSpeed;
+    }
+    &.animOut {
+      animation: fadeUpTop $animationSpeed;
+    }
+  }
+
+  &__title {
+    align-self: center;
+    color: #cacaca;
+    font-size: 10rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    transform: rotate(-90deg);
+    opacity: 0.7;
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(122, 0, 0, 0.9) 10%, rgba(135, 100, 0, 0.9) 58%, rgba(7, 93, 0, 0.9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__list-wrap {
+  }
+
+  &__list {
+    padding: 0;
+
+    .animIn{
+      animation: fadeInSkills 0.3s forwards;
+    }
+    .animOut {
+      animation: fadeOutSkills 0.3s forwards;
+    }
+    }
+
+  &__items-wrapper {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  &__level-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+
+  &__item {
+    list-style: none;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin: 25px 10px;
+    animation-fill-mode: forwards;
+  }
+
+  &__img {
+    border: 3px solid #c3c3c3;
+    border-radius: 50%;
+    background: url("../img/skillSprite.png") no-repeat;
+    background-size: 500%;
+    width: 100%;
+    height: 100%;
+
+    &--html {
+      background-position: 0 0;
+    }
+
+    &--css {
+      background-position: -90px 0;
+    }
+
+    &--less {
+      background-position: -180px 0;
+    }
+
+    &--sass {
+      background-position: -270px 0;
+    }
+
+    &--javas {
+      background-position: 0 -90px;
+    }
+
+    &--jquery {
+      background-position: -91px -90px;
+    }
+
+    &--bootstrap {
+      background-position: -180px -90px;
+    }
+
+    &--bem {
+      background-position: -270px -90px;
+    }
+
+    &--git {
+      background-position: 0 -180px;
+    }
+
+    &--gulp {
+      background-position: -90px -180px;
+    }
+
+    &--photoshop {
+      background-position: -180px -180px;
+    }
+
+    &--illustrator {
+      background-position: -90px -270px;
+    }
+
+    &--node {
+      background-position: 0 -270px;
+    }
+
+    &--express {
+      background-position: -360px -90px;
+    }
+
+    &--react {
+      background-position: -270px -270px;
+    }
+
+    &--redux {
+      background-position: -360px 0;
+    }
+
+    &--redux-saga {
+      background-position: -360px -180px;
+    }
+
+    &--styled-comp {
+      background-position: -360px -269px;
+    }
+
+    &--materUi {
+      background-position: -180px -270px;
+    }
+  }
+}
+
+@for $i from 1 to 9 {
+  .skills__level-list--high .skills__item:nth-child(#{$i}) { animation-delay: $i * $animation-delay; }
+}
+
+@for $i from 1 to 6 {
+  .skills__level-list--medium .skills__item:nth-child(#{$i}) { animation-delay: $i * $animation-delay; }
+}
+
+@for $i from 1 to 5 {
+  .skills__level-list--low .skills__item:nth-child(#{$i}) { animation-delay: $i * $animation-delay; }
+}
+
+@for $i from 1 to 4 {
+  .skills__level-list--basic .skills__item:nth-child(#{$i}) { animation-delay: $i * $animation-delay; }
+}
+
+
+
+
+
+
+@keyframes fadeIn {
+  from{transform: translate3d(1300%, 0, 0)}
+  to{transform: none}
+}
+
+@keyframes fadeOut {
+  from{transform: none}
+  to{transform: translate3d(-1300%, 0, 0)}
+}
+
+
+@media (max-width: 992px) {
+  .skills {
+    &__title {
+      font-size: 7rem;
+    }
+
+    &__item {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__img {
+
+      &--html {
+        background-position: 0 0;
+      }
+
+      &--css {
+        background-position: -60px 0;
+      }
+
+      &--less {
+        background-position: -120px 0;
+      }
+
+      &--sass {
+        background-position: -180px 0;
+      }
+
+      &--javas {
+        background-position: 0 -60px;
+      }
+
+      &--jquery {
+        background-position: -61px -60px;
+      }
+
+      &--bootstrap {
+        background-position: -120px -60px;
+      }
+
+      &--bem {
+        background-position: -180px -60px;
+      }
+
+      &--git {
+        background-position: 0 -120px;
+      }
+
+      &--gulp {
+        background-position: -60px -120px;
+      }
+
+      &--photoshop {
+        background-position: -120px -120px;
+      }
+
+      &--illustrator {
+        background-position: -60px -180px;
+      }
+
+      &--node {
+        background-position: 0 -180px;
+      }
+
+      &--express {
+        background-position: -240px -60px;
+      }
+
+      &--react {
+        background-position: -180px -180px;
+      }
+
+      &--redux {
+        background-position: -240px 0;
+      }
+
+      &--redux-saga {
+        background-position: -240px -120px;
+      }
+
+      &--styled-comp {
+        background-position: -240px -180px;
+      }
+
+      &--materUi {
+        background-position: -120px -180px;
+      }
+    }
+  }
+
+}
+@media (max-width: 768px) {
+  .skills {
+    &__wrap {
+      width: 90%;
+    }
+    &__title {
+      font-size: 4rem;
+    }
+
+    &__item {
+      width: 40px;
+      height: 40px;
+      margin: 10px 5px;
+    }
+
+    &__img {
+
+      &--html {
+        background-position: 0 0;
+      }
+
+      &--css {
+        background-position: -40px 0;
+      }
+
+      &--less {
+        background-position: -80px 0;
+      }
+
+      &--sass {
+        background-position: -120px 0;
+      }
+
+      &--javas {
+        background-position: 0 -40px;
+      }
+
+      &--jquery {
+        background-position: -41px -40px;
+      }
+
+      &--bootstrap {
+        background-position: -80px -40px;
+      }
+
+      &--bem {
+        background-position: -120px -40px;
+      }
+
+      &--git {
+        background-position: 0 -80px;
+      }
+
+      &--gulp {
+        background-position: -40px -80px;
+      }
+
+      &--photoshop {
+        background-position: -80px -80px;
+      }
+
+      &--illustrator {
+        background-position: -40px -120px;
+      }
+
+      &--node {
+        background-position: 0 -120px;
+      }
+
+      &--express {
+        background-position: -160px -40px;
+      }
+
+      &--react {
+        background-position: -120px -120px;
+      }
+
+      &--redux {
+        background-position: -160px 0;
+      }
+
+      &--redux-saga {
+        background-position: -160px -80px;
+      }
+
+      &--styled-comp {
+        background-position: -160px -120px;
+      }
+
+      &--materUi {
+        background-position: -80px -120px;
+      }
+    }
+  }
+}

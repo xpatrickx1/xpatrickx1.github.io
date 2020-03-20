@@ -1,0 +1,300 @@
+$primary-color: white;
+$bg: black;
+@mixin btn {
+  margin: 5px;
+  background: #667179;
+  border: none;
+  color: #dbdbdb;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin mainBtn {
+  width: 49%;
+  height: 40px;
+  font-size: 1.6rem;
+  background: #1ab188;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+h1 {
+  color: $primary-color;
+  background-color: $bg;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  background: #93b1cb;
+  font-size: 1.1rem;
+  height: 20px;
+  padding: 0;
+  width: 100%;
+}
+
+
+#usrTbl {
+  margin-top: 10px;
+  width: 50%;
+  height: 250px;
+  background: #8093A1;
+  overflow: scroll;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.table {
+  width: 100%;
+  &__row {
+    height: 40px;
+  }
+
+  &__thead {
+    background: #748DA1;
+  }
+
+  &__header {
+    background: #748DA1;
+    width: 25%;
+    padding: 10px;
+    position: sticky;
+    top: 3px;
+  }
+
+  &__data {
+    text-align: center;
+  }
+  
+  &__input {
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    height: 15px;
+    font-size: 16px;
+    background: none;
+    text-align: center;
+  }
+
+  &__error {
+    display: none;
+    position: sticky;
+    align-self: end;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(255, 102, 3, 0.7);
+    font-size: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+  &__error.error {
+    color: #000;
+    display: block;
+  }
+}
+
+.editing {
+  background: #748DA1;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: rgb(60,60,60);
+  background: linear-gradient(0deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 0%, rgba(36,44,50,1) 100%);
+}
+
+.modal {
+  display: none;
+
+  &__wrapper {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(13, 13, 13, 0.3);
+  }
+
+  &__content {
+    width: 30%;
+    z-index: 100;
+    margin: auto;
+    background: #2a3843;
+    padding: 20px;
+    border: 1px solid #1e2b36;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  }
+
+}
+
+.modal.active {
+  display: flex;
+}
+
+.close {
+  float: right;
+  color: #c9c9cb;
+  font-size: 22px;
+  font-weight: bold;
+
+  &:hover, &:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+
+.form {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  &__input-wrapper {
+    width: 100%;
+    padding: 10px;
+
+    &--age {
+      width: 40%;
+    }
+
+    &--gender {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 40%;
+    }
+
+  }
+
+  &__label-name {
+    color: #b3b3b3;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  &__input {
+    outline: none;
+    width: 100%;
+    height: 20px;
+    border: 1px solid #c9c9cb;
+    font-size: 22px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    background: none;
+    color: #fff;
+
+    &--age {
+      width: 80%;
+    }
+  }
+
+  &__input.error {
+    border: 1px solid #FF6603;
+  }
+  
+  &__submit {
+    width: 160px;
+    height: 50px;
+    background: #1ab188;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+.error {
+  color: #FF6603;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.btn-addPlayer {
+  @include mainBtn;
+}
+
+.chooseWinnerBtn {
+  @include mainBtn;
+}
+
+.btn-editPlayer {
+  width: 100px;
+  height: 30px;
+  font-size: 1.1rem;
+  @include btn;
+}
+
+.btn-delPlayer {
+  width: 100px;
+  height: 30px;
+  font-size: 1.1rem;
+  @include btn
+}
+
+.btn-savePlayer {
+  width: 100px;
+  height: 30px;
+  font-size: 1.1rem;
+  @include btn
+}
+
+.hidden {
+  display: none;
+}
+
+.btnContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 330px;
+}
+
+.winner {
+  width: 50%;
+  height: 110px;
+  margin-top: 20px;
+  background: #748DA1;
+  
+  &__caption {
+    background: #5a7286;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__tbody {
+    background: #8093A1;
+  }
+}
