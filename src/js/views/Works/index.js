@@ -42,7 +42,7 @@ class Works {
                                     </div>
                                     <div class="works__item" animated>
                                         <a class="works__link" href="https://xpatrickx1.github.io/macpaw_test/">
-                                            <img class="works__img" src="./img/ChuckNorrisAPI.jpg" alt="ChuckNorrisAPI app screenshot">
+                                            <img class="works__img" src="./img/ChuckNorrisAPI.png" alt="ChuckNorrisAPI app screenshot">
                                         </a>
                                     </div>
                                   </div>
