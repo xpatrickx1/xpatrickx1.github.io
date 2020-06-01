@@ -8,7 +8,7 @@ const root = document.getElementById('root');
 root.append(loaderBox);
 
 function preloader() {
-    return setTimeout(showPage, 1700);
+    return setTimeout(showPage, 2000);
 }
 
 function showPage() {

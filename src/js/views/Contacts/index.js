@@ -1,5 +1,4 @@
 import { scrollAniMouse } from "../../components";
-import { form } from "../../../../sites/Lottery/src/js/Form/Form";
 
 class Contacts {
 
@@ -115,6 +114,11 @@ class Contacts {
                                             <li class="social__item" animated>
                                                 <div class="social__img social__img--linked">
                                                     <a class="social__link social__link--linked" href="https://www.linkedin.com/in/evgeniy-sonin-00b627161/"></a>
+                                                </div>
+                                            </li>
+                                            <li class="social__item" animated>
+                                                <div class="social__img social__img--github">
+                                                    <a class="social__link social__link--github" href="https://github.com/xpatrickx1"></a>
                                                 </div>
                                             </li>
                                           </ul>

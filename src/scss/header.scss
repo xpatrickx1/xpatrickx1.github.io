@@ -28,7 +28,7 @@ $whiteText: #cacaca;
     
     &:hover {
       background-image: url("../img/logoSun.png");
-      transition: background 0.5s ease;
+      transition: background 0.7s ease;
     }
   }
 
@@ -191,18 +191,10 @@ $whiteText: #cacaca;
   .header {
     display:-webkit-flex;
     &__logo {
-      //display: inline-block;
       margin-top: 10px;
       width: 90px;
       height: 70px;
     }
-  }
-
-  .nav-toggle {
-    //display: inline-block;
-    //z-index: 900;
-    //float: right;
-    //margin-top: 20px;
   }
 }
 

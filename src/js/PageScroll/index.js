@@ -35,7 +35,7 @@ function setNextPrevPage (direction) {
 };
 
 export function handleScrollDirection( direction ) {
-    const delay = 700;
+    const delay = 900;
     if ( direction !== 'none' )  {
         if ( direction == 'down' ) {
             document.onmousewheel = false;
@@ -43,14 +43,14 @@ export function handleScrollDirection( direction ) {
             animateElement('out');
             setTimeout( () => {setNextPrevPage (direction); animateElement('in')}, delay);
             setTimeout( () => {animatedBg ('in'); }, delay);
-            setTimeout( () => {document.onmousewheel = onMouseWheel}, 1000);
+            setTimeout( () => {document.onmousewheel = onMouseWheel}, 2000);
         } else {
             document.onmousewheel = false;
             animatedBg ('out');
             animateElement('out');
             setTimeout( () => {setNextPrevPage (direction); animateElement('in')},delay);
             setTimeout( () => {animatedBg ('in'); }, delay);
-            setTimeout( () => {document.onmousewheel = onMouseWheel}, 1000);
+            setTimeout( () => {document.onmousewheel = onMouseWheel}, 2000);
         }
     }
 };

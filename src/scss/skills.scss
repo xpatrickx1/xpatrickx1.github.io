@@ -1,4 +1,4 @@
-$animation-delay: 0.01s;
+$animation-delay: 0.05s;
 
 .skills {
   flex: 1 0 auto;
@@ -39,17 +39,16 @@ $animation-delay: 0.01s;
     -webkit-text-fill-color: transparent;
   }
 
-  &__list-wrap {
-  }
-
   &__list {
     padding: 0;
 
     .animIn{
-      animation: fadeInSkills 0.3s forwards;
+      animation: fadeInSkills 1s forwards;
+      animation-fill-mode: both;
     }
     .animOut {
-      animation: fadeOutSkills 0.3s forwards;
+      animation: fadeOutSkills 1s forwards;
+      animation-fill-mode: both;
     }
     }
 
@@ -178,10 +177,6 @@ $animation-delay: 0.01s;
 @for $i from 1 to 4 {
   .skills__level-list--basic .skills__item:nth-child(#{$i}) { animation-delay: $i * $animation-delay; }
 }
-
-
-
-
 
 
 @keyframes fadeIn {

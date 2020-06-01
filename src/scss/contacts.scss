@@ -127,6 +127,7 @@
   &__submit {
     padding: 10px 15px;
     outline: none;
+    border: 1px solid $whiteText;
     background: none;
     margin-top: 30px;
     cursor: pointer;
@@ -169,6 +170,7 @@
     margin: 15px 0;
     &.animIn{
       animation: fadeIn $animationSpeed;
+      animation-fill-mode: both;
     }
     &.animOut {
       animation: fadeOut $animationSpeed;
@@ -182,6 +184,7 @@
     &.animIn{
       animation: fadeIn $animationSpeed forwards;
       animation-delay: .2s;
+      animation-fill-mode: both;
     }
     &.animOut {
       animation: fadeOut $animationSpeed;
@@ -196,6 +199,7 @@
   &__item {
     display: inline-block;
     margin: 0 3px;
+    transform: translate3d(-1300%, 0, 0);
     &.animIn{
       animation: fadeIn $animationSpeed;
       animation-fill-mode: both;
@@ -209,20 +213,23 @@
     display: block;
     width: 70px;
     height: 70px;
+    border-radius: 10px;
     cursor: pointer;
     overflow: hidden;
   }
   &__img {
     background-image: url("../img/social.png");
     background-repeat: no-repeat;
-    background-size: 250px;
+    background-size: 340px;
     height: 70px;
+    border-radius: 10px;
     transition: all .5s ease;
-
+    border: 1px solid transparent;
 
     &:hover {
-      background-size: 260px;
+      border: 1px solid $whiteText;
     }
+
 
     &--faceb {
       background-position: 10px 0;
@@ -236,10 +243,13 @@
     &--linked {
       background-position: -180px 0;
     }
+    &--github {
+      background-position: -253px 0;
+    }
   }
 }
 
-@for $i from 1 to 5 {
+@for $i from 1 to 6 {
   .social__item:nth-child(#{$i}) { animation-delay: $i * $animation-delay; }
 }
 
