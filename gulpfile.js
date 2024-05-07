@@ -3,7 +3,6 @@ const browsersync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const clean = require('gulp-clean');
 const cleanCSS = require('gulp-clean-css');
-const autoprefixer = require('gulp-autoprefixer');
 const rigger = require('gulp-rigger'); //работа с инклюдами в html и j
 const plumber = require("gulp-plumber");
 const uglify = require('gulp-uglify'); //минификация js
@@ -16,7 +15,9 @@ const spritesmith = require("gulp.spritesmith");
 const rename = require("gulp-rename");
 const sourcemaps = require('gulp-sourcemaps');
 const webpackStream = require('webpack-stream');
+const util = require('gulp-util');
 
+const isProd = util.env.production;
 
 const paths = {
     html: {
@@ -75,7 +76,6 @@ function css() {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(autoprefixer({cascade: false}))
         .pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(paths.styles.dest))
@@ -130,14 +130,23 @@ function watchFiles() {
     gulp.watch('src/img/**/*', img);
 }
 
+// function build() {
+//     gulp.parallel(img, js, gulp.series(css, html));
+//   }
 
-gulp.task('build', gulp.series(cleanFiles, gulp.parallel(html, css, js, img)));
-gulp.task('dev', gulp.series('build', gulp.parallel(watchFiles, browserSync)));
+const dev = gulp.series(watchFiles, browserSync);
+function build(cb) {
+    gulp.parallel(img, js, gulp.series(css, html));
+    cb();
+  }
+  
+  exports.dev = dev
+  exports.default = build
 
-
-exports.cleanFiles = cleanFiles;
-exports.html = html;
-exports.css = css;
+// exports.cleanFiles = cleanFiles;
+// exports.html = html;
+// exports.css = css;
 // exports.img = img;
-exports.js = js;
-exports.cacheClean = cacheClean;
+// exports.js = js;
+// exports.cacheClean = cacheClean;
+// exports.default = build;

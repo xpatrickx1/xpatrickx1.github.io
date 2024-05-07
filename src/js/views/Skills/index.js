@@ -8,6 +8,7 @@ class Skills {
         skills.setAttribute('page', '');
         skills.innerHTML = `<div class="skills__wrap">
                                 <div class="skills__title-wrap" animated>
+                                
                                     <h1 class="skills__title">Skills</h1>
                                     <span class="skills__level"></span>
                                 </div>
@@ -25,6 +26,9 @@ class Skills {
                                         <li class="skills__items-wrapper">
                                             <ul class="skills__level-list skills__level-list--high">
                                                 <li class="skills__item" animated>
+                                                    <div class="skills__img skills__img--javas" ></div>
+                                                </li>
+                                                <li class="skills__item" animated>
                                                     <div class="skills__img skills__img--html" ></div>
                                                 </li>
                                                 <li class="skills__item" animated>
@@ -36,9 +40,7 @@ class Skills {
                                                 <li class="skills__item" animated>
                                                     <div class="skills__img skills__img--sass" ></div>
                                                 </li>
-                                                <li class="skills__item" animated>
-                                                    <div class="skills__img skills__img--javas" ></div>
-                                                </li>
+                                            
                                                 <li class="skills__item" animated>
                                                     <div class="skills__img skills__img--git" ></div>
                                                 </li>
@@ -46,7 +48,7 @@ class Skills {
                                                     <div class="skills__img skills__img--gulp" ></div>
                                                 </li>
                                             </ul>    
-                                        </li>
+                                     </li>
                                         <li class="skills__items-wrapper">
                                             <ul class="skills__level-list skills__level-list--medium">
                                                 <li class="skills__item" animated>
