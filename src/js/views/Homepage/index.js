@@ -1,7 +1,7 @@
 import {scrollAniMouse} from '../../components/';
 
 class Homepage {
-
+//// <img src="./img/me.png" class="homepage__image" alt="my-photo" animated>
     render () {
         this.homepage = document.createElement('section');
         this.homepage.id = 'homepage';
@@ -16,7 +16,17 @@ class Homepage {
                                              kitesurfer and snowboarder.</p>
                                      </div>
                                      <div class="homepage__image_wrapper">
-                                        <img src="./img/me.png" class="homepage__image" alt="my-photo" animated>
+                                        
+                                        <picture class="lazy" >
+                                            <source data-srcset="./img/me-mob.png" media="(max-width: 767px)">
+                                            <img 
+                                                src="./img/me.png"
+                                                width="450"
+                                                height="730"
+                                                class="homepage__image"
+                                                animated
+                                            >
+                                        </picture>
                                      </div>
                                    </div>`;
         this.homepage.append(scrollAniMouse.render());

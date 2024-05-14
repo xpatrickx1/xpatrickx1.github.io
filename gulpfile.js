@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const browsersync = require('browser-sync').create();
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const clean = require('gulp-clean');
 const cleanCSS = require('gulp-clean-css');
 const rigger = require('gulp-rigger'); //работа с инклюдами в html и j
@@ -27,12 +27,14 @@ const paths = {
     },
     styles: {
         src: 'src/scss/main.scss',
-        dest: 'dist/css/'
+        dest: 'dist/css/',
+        dest2: 'css/'
     },
     scripts: {
         src: 'src/js/main.js',
         src2: 'src/js/**/*.js',
-        dest: 'dist/js/'
+        dest: 'dist/js/',
+        dest2: 'js/'
     },
     img: {
         src: 'src/img/*.*',
@@ -74,11 +76,10 @@ function html() {
 function css() {
     return gulp.src(paths.styles.src)
         .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(paths.styles.dest))
+        .pipe(gulp.dest(paths.styles.dest2))
         .pipe(browsersync.stream());
 }
 
@@ -109,10 +110,11 @@ function js() {
         .pipe(concat('main.js'))
         .pipe(sourcemaps.init())
         .pipe(uglify())
-        // .pipe(jsMin())
+        .pipe(jsMin())
         .pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(paths.scripts.dest))
+        .pipe(gulp.dest(paths.scripts.dest2))
         .pipe(browsersync.stream());
 }
 
@@ -135,18 +137,14 @@ function watchFiles() {
 //   }
 
 const dev = gulp.series(watchFiles, browserSync);
-function build(cb) {
-    gulp.parallel(img, js, gulp.series(css, html));
-    cb();
-  }
+const build = gulp.parallel(img, js, gulp.series(css, html));
   
-  exports.dev = dev
-  exports.default = build
 
-// exports.cleanFiles = cleanFiles;
-// exports.html = html;
-// exports.css = css;
-// exports.img = img;
-// exports.js = js;
-// exports.cacheClean = cacheClean;
-// exports.default = build;
+
+exports.cleanFiles = cleanFiles;
+exports.html = html;
+exports.css = css;
+exports.img = img;
+exports.js = js;
+exports.cacheClean = cacheClean;
+exports.default = !isProd ? dev : build;

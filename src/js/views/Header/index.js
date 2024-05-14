@@ -45,6 +45,8 @@ class Header {
                     e.preventDefault();
                     let clickedBtn = item.getAttribute('nav');
                     const allPages = getPages();
+                    hamburger.doToggle(e)
+                    // window.history.pushState("object or string", "", clickedBtn);
                     allPages.forEach( page => {
                         if ( page.id == clickedBtn ) {
                             animatedBg ('out');

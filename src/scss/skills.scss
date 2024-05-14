@@ -79,85 +79,98 @@ $animation-delay: 0.05s;
   &__img {
     border: 3px solid #c3c3c3;
     border-radius: 50%;
-    background: url("../img/skillSprite.png") no-repeat;
-    background-size: 500%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
 
     &--html {
-      background-position: 0 0;
+      background-image: url("../img/skills/skill1.png");
     }
 
     &--css {
-      background-position: -90px 0;
+      background-image: url("../img/skills/skill2.png");
     }
 
     &--less {
-      background-position: -180px 0;
+      background-image: url("../img/skills/skill3.png");
     }
 
     &--sass {
-      background-position: -270px 0;
+      background-image: url("../img/skills/skill4.png");
     }
 
     &--javas {
-      background-position: 0 -90px;
+      background-image: url("../img/skills/skill6.png");
     }
 
     &--jquery {
-      background-position: -91px -90px;
+      background-image: url("../img/skills/skill7.png");
     }
 
     &--bootstrap {
-      background-position: -180px -90px;
+      background-image: url("../img/skills/skill8.png");
     }
 
     &--bem {
-      background-position: -270px -90px;
+      background-image: url("../img/skills/skill9.png");
     }
 
     &--git {
-      background-position: 0 -180px;
+      background-image: url("../img/skills/skill11.png");
     }
 
     &--gulp {
-      background-position: -90px -180px;
-    }
-
-    &--photoshop {
-      background-position: -180px -180px;
-    }
-
-    &--illustrator {
-      background-position: -90px -270px;
+      background-image: url("../img/skills/skill12.png");
     }
 
     &--node {
-      background-position: 0 -270px;
+      background-image: url("../img/skills/skill14.png");
     }
 
     &--express {
-      background-position: -360px -90px;
+      background-image: url("../img/skills/skill10.png");
     }
 
     &--react {
-      background-position: -270px -270px;
+      background-image: url("../img/skills/skill15.png");
     }
 
     &--redux {
-      background-position: -360px 0;
+      background-image: url("../img/skills/skill5.png");
     }
 
     &--redux-saga {
-      background-position: -360px -180px;
+      background-image: url("../img/skills/skill13.png");
     }
 
     &--styled-comp {
-      background-position: -360px -269px;
+      background-image: url("../img/skills/skill18.png");
     }
 
-    &--materUi {
-      background-position: -180px -270px;
+    &--wp {
+      background-image: url("../img/skills/skill16.png");
+    }
+
+    &--twig {
+      background-image: url("../img/skills/skill17.png");
+    }
+
+    &--php {
+      background-image: url("../img/skills/skill18.png");
+    }
+
+    &--mongo {
+      background-image: url("../img/skills/skill19.png");
+    }
+
+    &--npm {
+      background-image: url("../img/skills/skill20.png");
+    }
+    
+    &--webpack {
+      background-image: url("../img/skills/skill21.png");
     }
   }
 }
@@ -166,7 +179,7 @@ $animation-delay: 0.05s;
   .skills__level-list--high .skills__item:nth-child(#{$i}) { animation-delay: $i * $animation-delay; }
 }
 
-@for $i from 1 to 6 {
+@for $i from 1 to 9 {
   .skills__level-list--medium .skills__item:nth-child(#{$i}) { animation-delay: $i * $animation-delay; }
 }
 
@@ -200,89 +213,10 @@ $animation-delay: 0.05s;
       width: 60px;
       height: 60px;
     }
-
-    &__img {
-
-      &--html {
-        background-position: 0 0;
-      }
-
-      &--css {
-        background-position: -60px 0;
-      }
-
-      &--less {
-        background-position: -120px 0;
-      }
-
-      &--sass {
-        background-position: -180px 0;
-      }
-
-      &--javas {
-        background-position: 0 -60px;
-      }
-
-      &--jquery {
-        background-position: -61px -60px;
-      }
-
-      &--bootstrap {
-        background-position: -120px -60px;
-      }
-
-      &--bem {
-        background-position: -180px -60px;
-      }
-
-      &--git {
-        background-position: 0 -120px;
-      }
-
-      &--gulp {
-        background-position: -60px -120px;
-      }
-
-      &--photoshop {
-        background-position: -120px -120px;
-      }
-
-      &--illustrator {
-        background-position: -60px -180px;
-      }
-
-      &--node {
-        background-position: 0 -180px;
-      }
-
-      &--express {
-        background-position: -240px -60px;
-      }
-
-      &--react {
-        background-position: -180px -180px;
-      }
-
-      &--redux {
-        background-position: -240px 0;
-      }
-
-      &--redux-saga {
-        background-position: -240px -120px;
-      }
-
-      &--styled-comp {
-        background-position: -240px -180px;
-      }
-
-      &--materUi {
-        background-position: -120px -180px;
-      }
-    }
   }
 
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .skills {
     &__wrap {
       width: 90%;
@@ -292,88 +226,9 @@ $animation-delay: 0.05s;
     }
 
     &__item {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       margin: 10px 5px;
-    }
-
-    &__img {
-
-      &--html {
-        background-position: 0 0;
-      }
-
-      &--css {
-        background-position: -40px 0;
-      }
-
-      &--less {
-        background-position: -80px 0;
-      }
-
-      &--sass {
-        background-position: -120px 0;
-      }
-
-      &--javas {
-        background-position: 0 -40px;
-      }
-
-      &--jquery {
-        background-position: -41px -40px;
-      }
-
-      &--bootstrap {
-        background-position: -80px -40px;
-      }
-
-      &--bem {
-        background-position: -120px -40px;
-      }
-
-      &--git {
-        background-position: 0 -80px;
-      }
-
-      &--gulp {
-        background-position: -40px -80px;
-      }
-
-      &--photoshop {
-        background-position: -80px -80px;
-      }
-
-      &--illustrator {
-        background-position: -40px -120px;
-      }
-
-      &--node {
-        background-position: 0 -120px;
-      }
-
-      &--express {
-        background-position: -160px -40px;
-      }
-
-      &--react {
-        background-position: -120px -120px;
-      }
-
-      &--redux {
-        background-position: -160px 0;
-      }
-
-      &--redux-saga {
-        background-position: -160px -80px;
-      }
-
-      &--styled-comp {
-        background-position: -160px -120px;
-      }
-
-      &--materUi {
-        background-position: -80px -120px;
-      }
     }
   }
 }

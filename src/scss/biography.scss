@@ -10,8 +10,11 @@
   &__part {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     margin-bottom: 20px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
   &__works {
@@ -26,7 +29,10 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 8px;
-    width: 660px;
+
+    @media (min-width: 992px) {
+      width: 70%;
+    }
   }
 
   &__title_wrapper {
@@ -71,7 +77,7 @@
   }
 
   &__position {
-    margin: 15px;
+    margin: 10px;
     font-size: 1.3rem;
     color: $whiteText;
   }

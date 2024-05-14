@@ -20,6 +20,7 @@
   &__image {
     align-self: flex-end;
     width: 100%;
+    height: auto;
 
     &.animIn{
       animation: fadeUp $animationSpeed forwards;

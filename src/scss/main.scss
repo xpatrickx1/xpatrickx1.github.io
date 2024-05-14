@@ -44,3 +44,13 @@ html, body {
 .show {
   display: block;
 }
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

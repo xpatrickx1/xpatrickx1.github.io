@@ -9,6 +9,16 @@ class Works {
         works.innerHTML = `<div class="works">
                                   <div class="works__my_works">
                                     <div class="works__item" animated>
+                                        <a class="works__link" href="https://sferafilm.com/">
+                                            <img class="works__img" src="./img/sfera.jpg" alt="sfera website screenshot">
+                                        </a>
+                                    </div>
+                                    <div class="works__item" animated>
+                                        <a class="works__link" href="https://dontpanic.team/">
+                                            <img class="works__img" src="./img/dontpanic.png" alt="dontpanic website screenshot">
+                                        </a>
+                                    </div>
+                                    <div class="works__item" animated>
                                         <a class="works__link" href="https://xpatrickx1.github.io/AkseonovOpener/">
                                             <img class="works__img" src="./img/siteAO.jpg" alt="AO website screenshot">
                                         </a>
@@ -16,31 +26,6 @@ class Works {
                                     <div class="works__item" animated>
                                         <a class="works__link" href="https://xpatrickx1.github.io/Landing-VideoProductionCo/">
                                             <img class="works__img" src="./img/sitevideopro.jpg" alt="videopro website screenshot">
-                                        </a>
-                                    </div>
-                                    <div class="works__item" animated>
-                                        <a class="works__link" href="https://xpatrickx1.github.io/ShopBootstrap/">
-                                            <img class="works__img" src="./img/bootstrap-proj.png" alt="bootstrap website screenshot">
-                                        </a>
-                                    </div>
-                                    <div class="works__item" animated>
-                                        <a class="works__link" href="https://xpatrickx1.github.io/ArkanoidCanvas/">
-                                            <img class="works__img" src="./img/arkanoid.jpg" alt="arkanoid game screenshot">
-                                        </a>
-                                    </div>
-                                    <div class="works__item" animated>
-                                        <a class="works__link" href="https://xpatrickx1.github.io/LotteryJs/">
-                                            <img class="works__img" src="./img/lottery.jpg" alt="lottery app screenshot">
-                                        </a>
-                                    </div>
-                                    <div class="works__item" animated>
-                                        <a class="works__link" href="./sites/Whack-a-Mole/index.html">
-                                            <img class="works__img" src="./img/whackamolle.jpg" alt="whackamolle game screenshot">
-                                        </a>
-                                    </div>
-                                    <div class="works__item" animated>
-                                        <a class="works__link" href="https://xpatrickx1.github.io/macpaw_test/">
-                                            <img class="works__img" src="./img/ChuckNorrisAPI.png" alt="ChuckNorrisAPI app screenshot">
                                         </a>
                                     </div>
                                   </div>

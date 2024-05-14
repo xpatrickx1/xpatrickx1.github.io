@@ -13,32 +13,26 @@ class Biography {
                                      </div>
                                      <div class="biography__wrapper">
                                       <div class="biography__item" animated>
-                                        <p class="biography__year">2020 – 2024 <strong class="biography__organisation">Govitall / Qollabe</strong></p>
+                                        <p class="biography__year"><strong class="biography__organisation">Govitall / Qollabe</strong> (2020 – 2024)</p>
                                         <p class="biography__position">Front end developer</p>
-                                          <ul class="biography__list">
-                                            <li class="biography__item_responsibilities">Developed and supported more than 100 company websites;</li>
-                                            <li class="biography__item_responsibilities">Speed up websites, SEO optimization and improving Google Page Speed metrics, making our websites more attractive to Google and user-friendly;</li>
-                                            <li class="biography__item_responsibilities">Increased the Performance metric of more than 20 top sites by improving the LСP CLS and FСP parameters;</li>
-                                            <li class="biography__item_responsibilities">Moved order forms and calculators from JS to React.js;</li>
-                                          </ul>
+                                          <p class="biography__list">
+                                          Developed and supported more than 100 company websites. Speed up websites, SEO optimization and improving Google Page Speed metrics, making our websites more attractive to Google and user-friendly. Increased the Performance metric of more than 20 top sites by improving the LСP CLS and FСP parameters, moving them from the red zone to the yellow and green. Moved order forms and calculators from JS to React.js
+                                          </p>
                                       </div>
                                       <div class="biography__item" animated>
-                                        <p class="biography__year">2018 – 2020 <strong class="biography__organisation">Digital Pirates</strong></p>
+                                        <p class="biography__year"><strong class="biography__organisation">Digital Pirates</strong> (2018 – 2020)</p>
                                         <p class="biography__position">Front end developer</p>
                                           <p class="biography__list">
                                           Website development for customers.
                                           </p>
                                       </div>
                                          <div class="biography__item" animated>
-                                            <p class="biography__year">2013 – 2015 <strong class="biography__organisation">Kyivoblenergo</strong></p>
+                                            <p class="biography__year"><strong class="biography__organisation">Kyivoblenergo</strong> (2013 – 2015)</p>
                                             <p class="biography__position">Engineer 1 category.</p>
-                                              <ul class="biography__list">
-                                                <li class="biography__item_responsibilities">Development of tender documentation and supplier selection strategy;</li>
-                                                <li class="biography__item_responsibilities">Conducting tenders;</li>
-                                                <li class="biography__item_responsibilities">Supplier search and selection;</li>
-                                                <li class="biography__item_responsibilities">Monitoring compliance with delivery deadlines and product quality;</li>
-                                                <li class="biography__item_responsibilities">Analysis of the needs of the company, price planning.</li>
-                                              </ul>
+                                            <p class="biography__list">
+                                            Development of tender documentation and supplier selection strategy. Conducting tenders. Supplier search and selection. Monitoring compliance with delivery deadlines and product quality. Analysis of the needs of the company, price planning.
+                                            </p>
+                                              
                                          </div>
                                         
                                     </div>
@@ -51,12 +45,12 @@ class Biography {
                                       </div>
                                       <div class="biography__wrapper">
                                           <div class="biography__item" animated>
-                                            <p class="biography__year">2019 - 2020<strong class="university__name"> DAN.IT education</strong>
+                                            <p class="biography__year"><strong class="university__name"> DAN.IT education</strong> (2019 - 2020)
                                             <p class="biography__speciality">Front End</p>
                                           </div>
                                           <div class="biography__item" animated>
-                                            <p class="biography__year">2006 - 2011
-                                            <strong class="biography__name"> National Transport University</strong></p> 
+                                            <p class="biography__year">
+                                            <strong class="biography__name"> National Transport University</strong> (2006 - 2011)</p> 
                                             <p class="biography__speciality">Automechanical Faculty </br>Specialty: Automobiles</p>
                                           </div>
                                       </div>
