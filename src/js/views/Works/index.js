@@ -29,17 +29,18 @@ class Works {
                                         </a>
                                     </div>
                                     <div class="works__item" animated>
-                                        <a class="works__link" href="https://xpatrickx1.github.io/giko.meme/">
+                                        <a class="works__link" href="https://xpatrickx1.github.io/gikomeme/">
                                             <img class="works__img" src="./img/sitevideopro.jpg" alt="videopro website screenshot">
                                         </a>
                                     </div>
                                     <div class="works__item" animated>
-                                        <a class="works__link" href="https://xpatrickx1.github.io/cwat.meme/">
+                                        <a class="works__link" href="https://xpatrickx1.github.io/cwatmeme/">
                                             <img class="works__img" src="./img/sitevideopro.jpg" alt="videopro website screenshot">
                                         </a>
                                     </div>
                                   </div>
                              </div>`;
+
         works.append(scrollAniMouse.render());
         return works;
     }
