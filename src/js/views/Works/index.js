@@ -28,6 +28,16 @@ class Works {
                                             <img class="works__img" src="./img/sitevideopro.jpg" alt="videopro website screenshot">
                                         </a>
                                     </div>
+                                    <div class="works__item" animated>
+                                        <a class="works__link" href="https://xpatrickx1.github.io/giko.meme/">
+                                            <img class="works__img" src="./img/sitevideopro.jpg" alt="videopro website screenshot">
+                                        </a>
+                                    </div>
+                                    <div class="works__item" animated>
+                                        <a class="works__link" href="https://xpatrickx1.github.io/cwat.meme/">
+                                            <img class="works__img" src="./img/sitevideopro.jpg" alt="videopro website screenshot">
+                                        </a>
+                                    </div>
                                   </div>
                              </div>`;
         works.append(scrollAniMouse.render());
