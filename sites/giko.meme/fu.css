@@ -1,0 +1,1502 @@
+@import url("https://use.typekit.net/xdk7xxa.css");
+
+
+a, a:visited {
+  color: #000;
+}
+
+.button, .button:visited {
+  display: inline-block;
+  background: black;
+  position: relative;
+  padding: 10px 30px;
+  border-radius: 80px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  margin-top: 30px;
+}
+
+.button:hover {
+  background: #ffff7b;
+  color: #000;
+}
+
+/* rock */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.fuggg {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "pf-videotext", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 24px;
+    background: #fff url(images/head-logo-bg.png) top left repeat;
+    background-size: 50px;
+    background-attachment: fixed;
+}
+
+
+.mobile-menu, .menu-button, .menu-overlay {
+  display: none;
+}
+
+img {
+  width:100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 8em;
+  text-align: center;
+  font-family: "glowworm-mn", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  color: #000;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 0 #ffff7b;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -9px;
+  animation: flicker 1.5s linear infinite;
+  transform: rotate(-2deg);
+}
+
+h1.whipper {
+  font-size: 16em;
+  color: #ffff7b;
+  animation: flicker 2.5s linear infinite;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  color: #ffff7b;
+  text-shadow: 4px 3px 0 #00fff2;
+  font-size: 4em;
+  font-family: "glowworm-mn", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h2.flicker {
+  text-align: center;
+  margin: 0;
+  color: #ffff7b;
+  text-shadow: 4px 3px 0 #00fff2;
+  font-size: 2.9em;
+  animation: flicker 3s linear infinite;
+}
+
+h3 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  line-height: 0.9;
+  text-align: center;
+  z-index: 9;
+  color: #000;
+  font-family: "glowworm-mn", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 4px 3px 0 #00fff2;
+  margin: 0;
+}
+
+.mememaker h3 {
+  text-shadow: 4px 3px 0 #000;
+  color: #00fff2;
+}
+
+
+h4 {
+  color: #ff7e00;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  line-height: 1;
+  text-shadow: 4px 3px 0 #00fff2;
+}
+
+
+.hideinit {
+  opacity: 0;
+}
+
+.buybox {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-weight: 400;
+  font-style: normal;
+  background: #000;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px dashed #ffff7b;
+  text-align: center;
+  animation: flicker 1.5s linear infinite;
+  z-index: 9000;
+}
+
+.ca {
+  cursor: copy;
+}
+
+.socials {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9000;
+}
+
+.close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px;
+
+  text-align: center;
+  animation: flicker 1.5s linear infinite;
+  z-index: 9000;
+}
+
+.texture {
+  position: absolute;
+  z-index: 4;
+  background: url(images/grid-noise.png) repeat;
+  mix-blend-mode: overlay;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.startagain {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 8;
+  width: 40%;
+  animation: flicker 3s linear infinite;
+  display: block;
+  transition: all 0.4s ease;
+  transform: scale(100%) rotate(0deg);
+}
+
+.social-media {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  z-index: 40;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.social-media .x, .social-media .telegram {
+  display: inline-block;
+  width: 40px;
+  height: auto;
+  padding: 10px;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.3);
+}
+
+.startagain:hover {
+  transform: scale(106%) rotate(3deg);
+}
+
+.startagain.off {
+  transform: scale(100%) rotate(3deg);
+  top: 100px;
+  left: 20px;
+  width: 200px;
+}
+
+.startagain2 {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+  animation: flicker 2s linear infinite;
+  display: block;
+}
+
+.startagain2.off {
+  display: none;
+}
+/* video */
+
+.vibey {
+  position: fixed;
+  z-index: 3;
+  top: 20%;
+  left: 0;
+  width: 100%;
+}
+
+.vibey img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.thevibe {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.thevibe.active {
+  display: block;
+}
+
+.video-container {
+  height:100%;
+  width: 100%;
+  position: relative;
+}
+
+.video-container video {
+width: 100%;
+height: 100%;
+position: absolute;
+object-fit: cover;
+z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+z-index: 1;
+position: relative;
+text-align: center;
+color: #54dc00;
+padding: 10px;
+}
+
+/* start content */
+
+.border-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  z-index: 9000;
+  background: #ffff7b;
+}
+
+.border-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  z-index: 9000;
+  background: #ffff7b;
+}
+
+.border-left {
+  position: fixed;
+  top: 0;
+  right: 0;
+  right: 0;
+  width: 15px;
+  z-index: 9000;
+  height: 100%;
+  background: #ffff7b;
+}
+
+.border-right {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  z-index: 9000;
+  background: #ffff7b;
+}
+
+.menu {
+  position: fixed;
+  z-index: 21;
+  top: 0;
+  width: 100%;
+}
+
+.startcontent {
+  position: relative;
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+  padding-top: 120px;
+  margin-right: 10%;
+  z-index: 6;
+  transition: all 0.2s ease;
+  right: auto;
+}
+
+.startcontent.off {
+  display: none;
+}
+
+.investcontent {
+  position: relative;
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+  padding-top: 120px;
+  margin-right: 10%;
+  z-index: 6;
+  display: none;
+}
+
+.investcontent.on {
+  display: block;
+}
+
+
+.contentarea {
+  position: relative;
+  margin: 3em 0;
+  background: #fff;
+  border: 2px dashed #00fff2;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 2em;
+  box-shadow: 4px 3px 0 #ffff7b;
+  transform: rotate(3deg);
+}
+
+.contentarea.investy {
+  transform: rotate(3deg);
+}
+
+.mememaker {
+  background: repeating-linear-gradient(
+    45deg,
+    #000,
+    #000 10px,
+    #fff 10px,
+    #fff 20px
+  );
+}
+
+.mememaker span {
+  background: white;
+  border-radius: 10px;
+  padding: 8px;
+  line-height: 1.5;
+}
+
+.contentarea2 {
+  position: relative;
+  margin: 3em 0;
+  background: #fff;
+  border: 2px dashed #00fff2;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 2em;
+  box-shadow: 4px 3px 0 #ffff7b;
+  transform: rotate(-2deg);
+}
+
+.contentarea2.bosh p {
+  padding-top: 40px;
+  background: url(images/head-logo-bg.png) top center no-repeat;
+  background-size: 40px;
+}
+
+p.ca {
+  background: none !important;
+}
+
+
+.final {
+  margin-bottom: 150px !important;
+}
+
+/* maincontainer */
+
+
+.menu-left {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.menu-left a, .menu-right a {
+  display: inline-block;
+  padding: 10px;
+  line-height: 1;
+  margin: 0;
+}
+
+.menu-left a:hover, .menu-right a:hover {
+  color: #ffff7b;
+  animation: flicker2 1.5s linear infinite;
+}
+
+.menu-right {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.logo {
+  position: absolute;
+  z-index: 400;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%) scale(1) rotate(0deg);
+  width: 190px;
+  transition: all 0.3s ease;
+}
+
+.logobutton:hover .logo {
+  transform: translateX(-50%) scale(1.3) rotate(2deg);
+}
+
+.maincontainer {
+  position: fixed;
+  top: 0;
+  transform: rotate(-6deg) scale(160%);
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(images/fast-sky.gif) top left repeat-x;
+  background-size: contain;
+  z-index: 5;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.maincontainer.active {
+  opacity: 1;
+  top: 0;
+  transform: rotate(0) scale(100%);
+}
+
+.maincontainer .scroller-top {
+  position: absolute;
+  width: 300vw;
+  height: 100%;
+  overflow-x: hidden;
+  z-index: 50;
+}
+
+.maincontainer .scroller-bottom {
+  position: absolute;
+  width: 300vw;
+  height: 100%;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+.scroller-bottom {
+  position: absolute;
+  width: 300vw;
+  height: 100%;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+marquee {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+.volumebox {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: white url(images/volume-on.svg) center no-repeat;
+  background-size: contain;
+  bottom: 40px;
+  right: 40px;
+  z-index: 10899;
+  cursor: pointer;
+  text-indent: 90000px;
+  overflow-x: hidden !important;
+}
+
+.volumebox.off {
+  background: white url(images/volume-off.svg) center no-repeat;
+  background-size: contain;
+}
+
+/* 1998 */
+
+.panel1 {
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+  left: 0;
+  display: inline-block;
+  transition: all 0.6s ease-in-out;
+}
+
+.panel1.off {
+  left: -100vw;
+}
+
+.panel2 {
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+  left: 100vw;
+  display: inline-block;
+  transition: all 0.6s ease-in-out;
+}
+
+.panel2.on {
+  left: 0;
+}
+
+.e-honda {
+  display: none;
+}
+
+.e-honda.on {
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  left: 20%;
+  z-index: 200;
+  width: 400px;
+}
+
+.hadoken-box {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 0%;
+  width: 68%;
+  z-index: 199;
+  top: auto;
+  left: auto;
+  height: 200px;
+}
+
+.hadoken-box.on .hadoken-box {
+  display: block;
+}
+
+.hadoken {
+  animation: scroll-left 1.5s linear infinite;
+  width: 200px;
+}
+
+.hadoken-box.on {
+  display: block;
+  
+}
+
+
+
+.maincontainer .ground {
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+
+.maincontainer.active .ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+/* GIKO */
+
+.giko {
+  position: fixed;
+  bottom: 10px;
+  left:10%;
+  z-index: 4000;
+  width: 20%;
+  background-size: contain;
+}
+
+.giko img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.gikogif {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 50%;
+  border-radius: 10px;
+  float: left;
+}
+
+
+.buy-box {
+  padding: 20px;
+  text-align: center;
+}
+
+.buy-box span {
+  display: block;
+  width: 40px;
+  background: #000;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+/* television */
+
+.tvbox {
+  position: absolute;
+  width: 35%;
+  bottom: 30px;
+  right: 15%;
+  transition: all 0.5s ease;
+  transform: scale(1) rotate(0);
+  z-index: 30000;
+  cursor: pointer;
+}
+
+.tvbox:hover {
+  transform: scale(1.3) rotate(-3deg);
+}
+
+.tvbox .television {
+  width: 100%;
+  position: relative;
+}
+
+/* infomodal */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: black url(images/windows-98.jpg) top center;
+  background-size: cover;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.overlay.active {
+  z-index: 10900;
+  display: block;
+  opacity: 1;
+}
+
+.closethepast {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -90000px;
+  width: 60px;
+  height: 27px;
+  display: inline-block;
+  z-index: 40;
+}
+
+
+.infomodal {
+  position: fixed;
+  z-index: 19000;
+  top: -250%;
+  left: 50%;
+  width: 50%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-sizing: border-box;
+  transition: all 0.5s cubic-bezier(.03,.34,.49,1.16);
+}
+
+.infomodal.active {
+  top: 50%;
+}
+
+.infomodal-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: url(images/windw-topleft.png) top left no-repeat, 
+              url(images/windw-topright.png) top right no-repeat, 
+              url(images/windw-bottomright.png) bottom right no-repeat, 
+              url(images/windw-bottomleft.png) bottom left no-repeat, 
+              url(images/windw-top.png) top left repeat-x, 
+              url(images/windw-bottom.png) bottom left repeat-x, 
+              url(images/windw-left.png) top left repeat-y,
+              url(images/windw-right.png) top right repeat-y;
+/*  background: url(images/windw-bottom.png) bottom left repeat-x; */
+}
+
+.content-inner {
+  position: absolute;
+  top: 30px;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+  overflow-y: scroll;
+  font-size: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.n64 {
+  width:80px;
+  height:80px;
+}
+
+.controller1 {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  animation: float 2s linear infinite;
+}
+
+.controller2 {
+  position: absolute;
+  top: 17%;
+  left: 20%;
+  width:120px;
+  height:120px;
+  animation: float 1.2s linear infinite;
+}
+
+.controller3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  animation: float 3s linear infinite;
+}
+
+.controller4 {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width:150px;
+  height:150px;
+  animation: float 3.1s linear infinite;
+}
+
+
+/* animations */
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes animName {
+  0%{
+     transform: rotate(0deg);
+    }
+ 100%{
+     transform: rotate(360deg);
+    }
+ }
+
+
+@keyframes boxflicker {
+	0%, 19%, 22%, 62%, 64%, 70%, 100% {
+		opacity: 0.99;
+		box-shadow: 
+			-1px -1px 0 rgba(255,255,255, 0.4), 
+			1px -1px 0 rgba(255,255,255, 0.4), 
+			-1px 1px 0 rgba(255,255,255, 0.4), 
+			1px 1px 0 rgba(255,255,255, 0.4), 
+			0 -2px 8px,
+			0 0 2px,
+			0 0 5px #ffff7b, 
+			0 0 15px #00fff2, 
+			0 0 2px #ff7e00, 
+			0 2px 3px #fff;
+	}
+	20%, 21%, 63%, 65%, 69.9% {
+		opacity: 0.8;
+		text-shadow: none;
+	}
+}
+
+@keyframes flicker {
+	0%, 19%, 22%, 62%, 64%, 70%, 100% {
+		opacity: 0.99;
+		text-shadow: 
+			-1px -1px 0 rgba(255,255,255, 0.4), 
+			1px -1px 0 rgba(255,255,255, 0.4), 
+			-1px 1px 0 rgba(255,255,255, 0.4), 
+			1px 1px 0 rgba(255,255,255, 0.4), 
+			0 -2px 8px,
+			0 0 2px,
+			0 0 5px #ffff7b, 
+			0 0 15px #00fff2, 
+			0 0 2px #ff7e00, 
+			0 2px 3px #fff;
+	}
+	20%, 21%, 63%, 65%, 69.9% {
+		opacity: 0.8;
+		text-shadow: none;
+	}
+}
+
+@keyframes flicker2 {
+	0%, 19%, 22%, 62%, 64%, 70%, 100% {
+		opacity: 0.99;
+		text-shadow: 
+			-1px -1px 0 rgba(255,255,255, 0.4), 
+			1px -1px 0 rgba(255,255,255, 0.4), 
+			-1px 1px 0 rgba(255,255,255, 0.4), 
+			1px 1px 0 rgba(255,255,255, 0.4), 
+			0 -2px 8px,
+			0 0 2px,
+			0 0 5px #ffff7b, 
+			0 0 15px #00fff2, 
+			0 0 2px #ff7e00, 
+			0 2px 3px #000;
+	}
+	20%, 21%, 63%, 65%, 69.9% {
+		opacity: 0.8;
+		text-shadow: none;
+	}
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-30px);} 
+  60% {transform: translateY(-15px);} 
+} 
+
+
+.sparkles {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: screen;
+  background: url(images/sparkles.gif) repeat;
+}
+
+.sparkles.smart {
+  background: white url(images/pixelbg.gif) center no-repeat;
+  background-size: cover;
+}
+
+.sparkles.off {
+  background-color: transparent;
+}
+
+
+.sparkles img {
+  display: block;
+  mix-blend-mode: overlay;
+}
+
+.bigday {
+  position: fixed;
+  z-index: 9000000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    #000,
+    #000 10px,
+    #fff 10px,
+    #fff 20px
+  );
+  transition: all 0.5s ease-in-out;
+}
+
+.bigday.off {
+  top: 100vh;
+}
+
+.boxy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(8deg) scale(0);
+  width: 35%;
+  background: #fff;
+  border: 2px dashed #00fff2;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 4px 3px 0 #ffff7b;
+  text-align: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.boxy.on {
+
+  transform: translate(-50%, -50%) rotate(-2deg) scale(1);
+}
+
+.geekologo {
+  width: 40%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.enter {
+  font-size: 30px;
+}
+
+.enter:hover {
+  font-size: 30px;
+  color: #ffff7b;
+  animation: flicker2 1.5s linear infinite;
+}
+
+
+/* ------------------------------------------------------------------- mobile */
+
+@media screen and (max-width: 767px) {
+
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .buybox {
+    font-size: 16px;
+  }
+
+  .ca {
+    word-break: break-all;
+  }
+
+
+  .infomodal {
+    position: fixed;
+    z-index: 19000;
+    top: -250%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-sizing: border-box;
+    transition: all 0.5s cubic-bezier(.03,.34,.49,1.16);
+  }
+
+  pre {
+    font-size: 14px;
+  }
+
+  .menu-left, .menu-right {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.2em;
+    letter-spacing: 0;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .maincontainer {
+    background: url(images/fast-sky.gif) top left no-repeat;
+    background-size: cover;
+  }
+
+  .maincontainer.active .ground {
+    bottom: 15px;
+  }
+ 
+  .startcontent, .investcontent {
+    position: relative;
+    width: 80%;
+    float: none;
+    box-sizing: border-box;
+    padding-top: 120px;
+    margin: 0 auto;
+    z-index: 6;
+    transition: all 0.2s ease;
+    right: auto;
+  }
+
+  .investcontent {
+    margin-bottom: 9em;
+  }
+
+  .startcontent p {
+    font-size: 20px;
+  }
+
+  .contentarea {
+    position: relative;
+    margin: 40px 0;
+    background: #fff;
+    border: 2px dashed #00fff2;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 3px 0 #ffff7b;
+    transform: rotate(0deg) !important;
+  }
+  
+  .contentarea2 {
+    position: relative;
+    margin: 40px 0;
+    background: #fff;
+    border: 2px dashed #00fff2;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 4px 3px 0 #ffff7b;
+    box-sizing: border-box;
+    transform: rotate(0deg);
+  }
+
+  .tvbox {
+    width: 74%;
+    bottom: 62px;
+    right: -5%;
+}
+
+  .giko {
+    position: fixed;
+    bottom: 10px;
+    left:-1.2%;
+    z-index: 12000;
+    width: 30%;
+    background-size: contain;
+  }
+  
+  .social-media {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    left: auto;
+  }
+
+
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    z-index: 30000;
+    text-align: center;
+    background: #ffff7b;
+    padding: 10px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+  }
+
+  .mobile-menu.on {
+    top: 0;
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .menu-button, .close-button {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 10800;
+    color: #000;
+    display: block;
+    background: #ffff7b;
+    padding: 12px;
+    display: none;
+  }
+
+  .menu-button.on {
+    display: block; 
+  }
+
+  .close-button.on {
+    display: block; 
+    z-index: 400000;
+  }
+
+  .menu-overlay.on {
+    display: block;
+    position: fixed;
+    z-index: 10700;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      45deg,
+      #000,
+      #000 10px,
+      #fff 10px,
+      #fff 20px
+    );
+    top: 0;
+    left: 0;
+  }
+
+  .boxy {
+    width: 90%;
+  }
+
+  .volumebox {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: #ffff7b url(images/volume-on.svg) center no-repeat;
+    background-size: 26px;
+    bottom: 10px;
+    right: auto;
+    left: 10px;
+    z-index: 12001;
+}
+
+.volumebox.off {
+  background: #ffff7b url(images/volume-off.svg) center no-repeat;
+  background-size: contain;
+}
+
+  .controller1 {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    animation: float 2s linear infinite;
+  }
+
+  .controller2 {
+    position: absolute;
+    top: 17%;
+    left: -8%;
+    width:120px;
+    height:120px;
+    animation: float 1.2s linear infinite;
+  }
+
+  .controller3 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    animation: float 3s linear infinite;
+  }
+
+  .controller4 {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    width:150px;
+    height:150px;
+    animation: float 3.1s linear infinite;
+  }
+
+
+}
+
+
+/* videos */
+
+.videooverlay {
+position: fixed;
+z-index: 4999;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: repeating-linear-gradient(
+    45deg,
+    #000,
+    #000 10px,
+    #fff 10px,
+    #fff 20px
+  );
+display: none;
+}
+
+.videooverlay.on {
+  display: block;
+}
+
+.videomodal {
+  bottom: 10%;
+  position: absolute;
+  right: -150vw;
+  z-index: 5000;
+  transition: all 0.4s ease;
+  width: 26.5%;
+  height: 77%;
+  overflow: hidden;
+  border: 10px solid white;
+  box-shadow: 4px 3px 0 #ffff7b;
+  border-radius: 8px;
+  transform: rotate(-2deg);
+  background: #fff;
+}
+
+.videomodal.on {
+  bottom: 10%;
+  right: 18%;
+}
+
+.videomodal video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+#screen {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  z-index: 20;
+  width: 55%;
+  text-align: center;
+  line-height: 0;
+}
+
+
+
+#screen video {
+  position: relative !important;
+  height: auto !important;
+  width: 100% !important;
+  visibility: visible !important;
+  border: 5px solid white;
+  border-radius: 10px;
+  
+}
+
+#screen a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.vid a::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease;
+  background: url(images/playbutton.png) center center no-repeat;
+  background-size: contain;
+  transform: scale(1);
+}
+
+#screen .video1 {
+  position: relative;
+  width: 30%;
+  margin: 20px;
+  transform: rotate(-2deg) scale(1);
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#screen .video2 {
+  position: relative;
+  width: 30%;
+  margin: 20px;
+  transform: rotate(-4deg) scale(1);
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#screen .video3 {
+  position: relative;
+  width: 30%;
+  margin: 20px;
+  transform: rotate(2deg) scale(1);
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#screen .video4 {
+  position: relative;
+  width: 30%;
+  margin: 20px;
+  transform: rotate(4deg) scale(1);
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#screen .vid:hover ,
+#screen .vid:hover,
+#screen .vid:hover,
+#screen .vid:hover {
+  transform: rotate(0deg) scale(1.25);
+}
+
+
+
+.vid a::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease;
+  background: url(images/playbutton.png) center center no-repeat;
+  background-size: contain;
+  transform: scale(1) translate(-50%, -50%);
+}
+
+.vid a:hover::after {
+  transform: scale(1.4) translate(-49%, -49%);
+}
+
+.mediaWindow {
+  position: absolute;
+  top: 100px;
+  left: -100vw;
+  z-index: 90000;
+  width: 600px;
+  transition: all 0.4s ease;
+}
+
+#mediaWindow.on {
+  left: 0;
+}
+
+
+/* ------------------------------------------------------------------- mobile */
+
+@media screen and (max-width: 767px) {
+  #screen {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    z-index: 20;
+    width: 85%;
+    text-align: center;
+    line-height: 0;
+  }  
+
+
+  .videomodal {
+    bottom: 10%;
+    position: absolute;
+    right: -150vw;
+    z-index: 5000;
+    transition: all 0.4s ease;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 10px solid white;
+    box-shadow: 4px 3px 0 #ffff7b;
+    border-radius: 8px;
+    transform: rotate(0deg);
+    background: #fff;
+  }
+  
+  .videomodal.on {
+    bottom: 0;
+    right: 0;
+  }
+
+  .close {
+    position: absolute;
+    right: auto;
+    top: 18px;
+    left: 20px;
+    z-index: 600;
+  }
+  
+  .videomodal video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+  }
+  
+
+}
