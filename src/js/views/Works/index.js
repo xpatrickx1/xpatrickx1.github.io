@@ -34,7 +34,7 @@ class Works {
                                         </a>
                                     </div>
                                     <div class="works__item" animated>
-                                        <a class="works__link" href="https://xpatrickx1.github.io/cwatmeme/">
+                                        <a class="works__link" href="https://xpatrickx1.github.io/cwatmeme/cwat.html">
                                             <img class="works__img" src="./img/sitevideopro.jpg" alt="videopro website screenshot">
                                         </a>
                                     </div>
